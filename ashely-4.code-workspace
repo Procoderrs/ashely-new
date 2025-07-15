@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../ashely-4"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../new-folder-5"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "new-folder"
+	}
+}
