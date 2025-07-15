@@ -1,0 +1,599 @@
+/* html{
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+
+   perspective: 600px; 
+} */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation section */
+.overflow-hidden.absolute.bg-yellow-300 {
+  z-index: 0; /* Lower z-index to place it behind the banner */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.animate-word {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Delay modifiers */
+.delay-0 {
+  animation-delay: 0s;
+}
+.delay-1 {
+  animation-delay: 1s;
+}
+.delay-2 {
+  animation-delay: 2s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+
+
+@keyframes borderSlide {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-border-slide {
+  animation: borderSlide 2s ease forwards;
+}
+
+/* .shadow {
+      position: absolute;
+      width: 100%;
+      height: 200%;
+      background-image: radial-gradient(#000, transparent 60%);
+      transform: rotateX(90deg) translateZ(-100px);
+    } */
+#main-content {
+  overflow-x: hidden;
+  overflow-y: hidden; /* Added to fix y-axis scrolling */
+}
+.dodecahedron {
+  position: absolute;
+  right: 15%;
+  top: 0%;
+  width: 40px; /* Increase size */
+  height: 669px;
+  transform-style: preserve-3d;
+  animation: rotate 60s infinite linear;
+  /* overflow-x: hidden; */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(0deg) rotateZ(-360deg);
+  }
+}
+
+.pentagon {
+  position: absolute;
+  width: 300px;
+  opacity: 0.8;
+}
+/* Top ring (Faces 1–5) */
+.pentagon:nth-child(1) {
+  transform: rotateY(0deg) translateZ(207px) rotateX(26.5deg);
+}
+.pentagon:nth-child(2) {
+  transform: rotateY(72deg) translateZ(207px) rotateX(26.5deg);
+}
+.pentagon:nth-child(3) {
+  transform: rotateY(144deg) translateZ(207px) rotateX(26.5deg);
+}
+.pentagon:nth-child(4) {
+  transform: rotateY(216deg) translateZ(207px) rotateX(26.5deg);
+}
+.pentagon:nth-child(5) {
+  transform: rotateY(288deg) translateZ(207px) rotateX(26.5deg);
+}
+
+/* Bottom ring (Faces 6–10) */
+.pentagon:nth-child(6) {
+  bottom: 0;
+  transform: rotateY(0deg) translateZ(-207px) rotateX(206.5deg);
+}
+.pentagon:nth-child(7) {
+  bottom: 0;
+  transform: rotateY(72deg) translateZ(-207px) rotateX(206.5deg);
+}
+.pentagon:nth-child(8) {
+  bottom: 0;
+  transform: rotateY(144deg) translateZ(-207px) rotateX(206.5deg);
+}
+.pentagon:nth-child(9) {
+  bottom: 0;
+  transform: rotateY(216deg) translateZ(-207px) rotateX(206.5deg);
+}
+.pentagon:nth-child(10) {
+  bottom: 0;
+  transform: rotateY(288deg) translateZ(-207px) rotateX(206.5deg);
+}
+
+/* Caps (Top and Bottom) */
+.pentagon:nth-child(11) {
+  transform: translateZ(207px) rotateX(-90deg);
+}
+.pentagon:nth-child(12) {
+  bottom: 0;
+  transform: translateZ(-207px) rotateX(90deg);
+}
+
+/* Pentagon Sides */
+.pentagon div {
+  position: absolute;
+  width: 300px;
+  height: 207px;
+  transform-origin: bottom;
+  border-top: 1px solid rgb(88, 86, 86);
+}
+
+.pentagon div:nth-child(1) {
+  transform: rotate(0deg);
+}
+.pentagon div:nth-child(2) {
+  transform: rotate(72deg);
+}
+.pentagon div:nth-child(3) {
+  transform: rotate(144deg);
+}
+.pentagon div:nth-child(4) {
+  transform: rotate(216deg);
+}
+.pentagon div:nth-child(5) {
+  transform: rotate(288deg);
+}
+/* Colorful background for each face */
+/* .pentagon:nth-child(1)  div { background-color: hsl(30, 75%, 75%); }
+    .pentagon:nth-child(2)  div { background-color: hsl(60, 75%, 75%); }
+    .pentagon:nth-child(3)  div { background-color: hsl(90, 75%, 75%); }
+    .pentagon:nth-child(4)  div { background-color: hsl(120, 75%, 75%); }
+    .pentagon:nth-child(5)  div { background-color: hsl(150, 75%, 75%); }
+    .pentagon:nth-child(6)  div { background-color: hsl(180, 75%, 75%); }
+    .pentagon:nth-child(7)  div { background-color: hsl(210, 75%, 75%); }
+    .pentagon:nth-child(8)  div { background-color: hsl(240, 75%, 75%); }
+    .pentagon:nth-child(9)  div { background-color: hsl(270, 75%, 75%); }
+    .pentagon:nth-child(10) div { background-color: hsl(300, 75%, 75%); }
+    .pentagon:nth-child(11) div { background-color: hsl(330, 75%, 75%); }
+    .pentagon:nth-child(12) div { background-color: hsl(360, 75%, 75%); } */
+
+#mouse-circle {
+  position: fixed;
+  width: 14px;
+  height: 14px;
+  background-color: rgba(128, 128, 128, 0.6); /* grey with opacity */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 4s ease-out;
+}
+
+.mil-lines-place .mil-lines .mil-move {
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(-75px);
+  }
+  50% {
+    transform: translateY(75px);
+  }
+  100% {
+    transform: translateY(-75px);
+  }
+}
+
+.dodecahedron-2 {
+  position: relative;
+
+  
+  width: 50px; /* was 100px */
+  height: 334px; /* was 669px */
+  transform-style: preserve-3d;
+  animation: rotate 60s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(0deg) rotateZ(-360deg);
+  }
+}
+
+.pentagon-2 {
+  position: absolute;
+  width: 150px; /* was 300px */
+  opacity: 0.8;
+}
+
+/* Top ring (Faces 1–5) */
+.pentagon-2:nth-child(1) {
+  transform: rotateY(0deg) translateZ(103.5px) rotateX(26.5deg);
+}
+.pentagon-2:nth-child(2) {
+  transform: rotateY(72deg) translateZ(103.5px) rotateX(26.5deg);
+}
+.pentagon-2:nth-child(3) {
+  transform: rotateY(144deg) translateZ(103.5px) rotateX(26.5deg);
+}
+.pentagon-2:nth-child(4) {
+  transform: rotateY(216deg) translateZ(103.5px) rotateX(26.5deg);
+}
+.pentagon-2:nth-child(5) {
+  transform: rotateY(288deg) translateZ(103.5px) rotateX(26.5deg);
+}
+
+/* Bottom ring (Faces 6–10) */
+.pentagon-2:nth-child(6) {
+  bottom: 0;
+  transform: rotateY(0deg) translateZ(-103.5px) rotateX(206.5deg);
+}
+.pentagon-2:nth-child(7) {
+  bottom: 0;
+  transform: rotateY(72deg) translateZ(-103.5px) rotateX(206.5deg);
+}
+.pentagon-2:nth-child(8) {
+  bottom: 0;
+  transform: rotateY(144deg) translateZ(-103.5px) rotateX(206.5deg);
+}
+.pentagon-2:nth-child(9) {
+  bottom: 0;
+  transform: rotateY(216deg) translateZ(-103.5px) rotateX(206.5deg);
+}
+.pentagon-2:nth-child(10) {
+  bottom: 0;
+  transform: rotateY(288deg) translateZ(-103.5px) rotateX(206.5deg);
+}
+
+/* Caps (Top and Bottom) */
+.pentagon-2:nth-child(11) {
+  transform: translateZ(103px) rotateX(-90deg);
+}
+.pentagon-2:nth-child(12) {
+  bottom: 0;
+  transform: translateZ(-103px) rotateX(90deg);
+}
+
+/* Pentagon Sides */
+.pentagon-2 div {
+  position: absolute;
+  width: 150px; /* was 300px */
+  height: 103.5px; /* was 207px */
+  transform-origin: bottom;
+  border-top: 1px solid rgb(88, 86, 86);
+}
+
+.pentagon-2 div:nth-child(1) {
+  transform: rotate(0deg);
+}
+.pentagon-2 div:nth-child(2) {
+  transform: rotate(72deg);
+}
+.pentagon-2 div:nth-child(3) {
+  transform: rotate(144deg);
+}
+.pentagon-2 div:nth-child(4) {
+  transform: rotate(216deg);
+}
+.pentagon-2 div:nth-child(5) {
+  transform: rotate(288deg);
+}
+
+/* 
+.animated-border{
+  border-top:0px solid transparent ;
+  transition: border-top0.4s ease;
+}
+.animated-border:hover{
+  animation: fillTopBorder 0.4s forwards;
+}
+
+@keyframes fillTopBorder {
+ from{
+  border-top-width:0px;
+  border-top-color: transparent;
+ } 
+ to{
+  border-top: 4px;
+  border-top-color: #ff9800;
+ }
+} */
+
+@keyframes scaleUp {
+  to {
+    transform: scale(1.3);
+  }
+}
+
+.animate-img {
+  animation: scaleUp linear;
+  animation-timeline: view();
+  animation-range: cover 0% cover 100%;
+  transform-origin: center;
+}
+
+.mil-lines-place .mil-lines {
+  opacity: 0.5;
+  width: 250px;
+}
+.mil-lines-place .mil-lines .mil-move {
+  -webkit-animation: move 10s linear infinite;
+  animation: move 10s linear infinite;
+}
+
+
+
+svg {
+      width: 230px;
+      height: auto;
+      margin-top: 80px;
+    }
+
+    .mil-move {
+      animation: move 8s linear infinite;
+      fill: #D0D0D0; /* Cyan fill for visibility */
+    }
+
+     path:not(.mil-move) {
+      fill: #D0D0D0;
+    }
+    @keyframes move {
+      0%   { transform: translateY(-75px); }
+      50%  { transform: translateY(75px); }
+      100% { transform: translateY(-75px); }
+    }
+
+
+     @keyframes slideLeft {
+    0% { transform: translateX(-30px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  @keyframes slideRight {
+    0% { transform: translateX(30px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  .animate-slide-left {
+    animation: slideLeft 0.4s ease-out forwards;
+  }
+  .animate-slide-right {
+    animation: slideRight 0.4s ease-out forwards;
+  }
+
+
+
+  /* linear timing for ultra‑smooth marquee */
+.swiper-wrapper { transition-timing-function: linear !important; }
+
+/* tweak bullets */
+.swiper-pagination-bullet { background:#4f46e5; }
+
+
+
+
+
+
+.pentagon-4 {
+  position: absolute;
+  width: 100px;
+  opacity: 0.8;
+}
+
+/* Top ring (Faces 1–5) */
+.pentagon-4:nth-child(1) {
+  transform: rotateY(0deg) translateZ(69px) rotateX(26.5deg);
+}
+.pentagon-4:nth-child(2) {
+  transform: rotateY(72deg) translateZ(69px) rotateX(26.5deg);
+}
+.pentagon-4:nth-child(3) {
+  transform: rotateY(144deg) translateZ(69px) rotateX(26.5deg);
+}
+.pentagon-4:nth-child(4) {
+  transform: rotateY(216deg) translateZ(69px) rotateX(26.5deg);
+}
+.pentagon-4:nth-child(5) {
+  transform: rotateY(288deg) translateZ(69px) rotateX(26.5deg);
+}
+
+/* Bottom ring (Faces 6–10) */
+.pentagon-4:nth-child(6) {
+  bottom: 0;
+  transform: rotateY(0deg) translateZ(-69px) rotateX(206.5deg);
+}
+.pentagon-4:nth-child(7) {
+  bottom: 0;
+  transform: rotateY(72deg) translateZ(-69px) rotateX(206.5deg);
+}
+.pentagon-4:nth-child(8) {
+  bottom: 0;
+  transform: rotateY(144deg) translateZ(-69px) rotateX(206.5deg);
+}
+.pentagon-4:nth-child(9) {
+  bottom: 0;
+  transform: rotateY(216deg) translateZ(-69px) rotateX(206.5deg);
+}
+.pentagon-4:nth-child(10) {
+  bottom: 0;
+  transform: rotateY(288deg) translateZ(-69px) rotateX(206.5deg);
+}
+
+/* Caps (Top and Bottom) */
+.pentagon-4:nth-child(11) {
+  transform: translateZ(69px) rotateX(-90deg);
+}
+.pentagon-4:nth-child(12) {
+  bottom: 0;
+  transform: translateZ(-69px) rotateX(90deg);
+}
+
+/* Pentagon Sides */
+.pentagon-4 div {
+  position: absolute;
+  width: 100px;
+  height: 69px;
+  transform-origin: bottom;
+  border-top: 1px solid rgb(88, 86, 86);
+}
+
+.pentagon-4 div:nth-child(1) { transform: rotate(0deg); }
+.pentagon-4 div:nth-child(2) { transform: rotate(72deg); }
+.pentagon-4 div:nth-child(3) { transform: rotate(144deg); }
+.pentagon-4 div:nth-child(4) { transform: rotate(216deg); }
+.pentagon-4 div:nth-child(5) { transform: rotate(288deg); }
+
+/* Dodecahedron Container */
+.dodecahedron-4 {
+  position: absolute;
+  top: 15%;
+left: 20%;
+  width: 13px;
+  height: 223px;
+  transform-style: preserve-3d;
+  animation: rotate 60s infinite linear;
+}
+
+
+
+
+.pentagon-5 {
+  position: absolute;
+  width: 100px;
+  opacity: 0.8;
+}
+
+/* Top ring (Faces 1–5) */
+.pentagon-5:nth-child(1) {
+  transform: rotateY(0deg) translateZ(69px) rotateX(26.5deg);
+}
+.pentagon-5:nth-child(2) {
+  transform: rotateY(72deg) translateZ(69px) rotateX(26.5deg);
+}
+.pentagon-5:nth-child(3) {
+  transform: rotateY(144deg) translateZ(69px) rotateX(26.5deg);
+}
+.pentagon-5:nth-child(4) {
+  transform: rotateY(216deg) translateZ(69px) rotateX(26.5deg);
+}
+.pentagon-5:nth-child(5) {
+  transform: rotateY(288deg) translateZ(69px) rotateX(26.5deg);
+}
+
+/* Bottom ring (Faces 6–10) */
+.pentagon-5:nth-child(6) {
+  bottom: 0;
+  transform: rotateY(0deg) translateZ(-69px) rotateX(206.5deg);
+}
+.pentagon-5:nth-child(7) {
+  bottom: 0;
+  transform: rotateY(72deg) translateZ(-69px) rotateX(206.5deg);
+}
+.pentagon-5:nth-child(8) {
+  bottom: 0;
+  transform: rotateY(144deg) translateZ(-69px) rotateX(206.5deg);
+}
+.pentagon-5:nth-child(9) {
+  bottom: 0;
+  transform: rotateY(216deg) translateZ(-69px) rotateX(206.5deg);
+}
+.pentagon-5:nth-child(10) {
+  bottom: 0;
+  transform: rotateY(288deg) translateZ(-69px) rotateX(206.5deg);
+}
+
+/* Caps (Top and Bottom) */
+.pentagon-5:nth-child(11) {
+  transform: translateZ(69px) rotateX(-90deg);
+}
+.pentagon-5:nth-child(12) {
+  bottom: 0;
+  transform: translateZ(-69px) rotateX(90deg);
+}
+
+/* Pentagon Sides */
+.pentagon-5 div {
+  position: absolute;
+  width: 100px;
+  height: 69px;
+  transform-origin: bottom;
+  border-top: 1px solid rgb(88, 86, 86);
+}
+
+.pentagon-5 div:nth-child(1) { transform: rotate(0deg); }
+.pentagon-5 div:nth-child(2) { transform: rotate(72deg); }
+.pentagon-5 div:nth-child(3) { transform: rotate(144deg); }
+.pentagon-5 div:nth-child(4) { transform: rotate(216deg); }
+.pentagon-5 div:nth-child(5) { transform: rotate(288deg); }
+
+/* Dodecahedron Container */
+.dodecahedron-5 {
+  position: absolute;
+  bottom: 0%;
+left: 50%;
+  width: 13px;
+  height: 223px;
+  transform-style: preserve-3d;
+  animation: rotate 60s infinite linear;
+}
+
+
+.circle-text
+ {
+  fill: #525252; /* original gray */
+  transition: fill 0.3s ease;
+}
+
+.group:hover .circle-text {
+  fill: white;
+}
+
+
+.animated-border {
+  position: relative;
+}
+
+
+
+
+
