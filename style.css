@@ -1,7 +1,7 @@
-/* html{
+ html{
   scroll-behavior: smooth;
 }
-
+/*
 body {
   height: 100%;
 
@@ -63,9 +63,14 @@ body {
 @keyframes borderSlide {
   from {
     width: 0%;
+    left: 0;
+    
   }
   to {
-    width: 100%;
+    width: 200px;
+    background-color: #ff9800;
+    right: 100%;
+    
   }
 }
 

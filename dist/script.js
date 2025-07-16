@@ -9,7 +9,7 @@
 // Show heading (default visible), then hide after 3s
 
   // Hide heading after 3s
-  /* setTimeout(() => {
+   setTimeout(() => {
     document.getElementById('pre-heading').classList.add('hidden');
     document.getElementById('pre-btn').classList.remove('hidden');
   }, 3000);
@@ -18,14 +18,14 @@
   setTimeout(() => {
     document.getElementById('pre-btn').classList.add('hidden');
     document.getElementById('pre-name').classList.remove('hidden');
-  }, 6000);
+  }, 5000);
 
   // Hide name, show main content
   setTimeout(() => {
     document.getElementById('pre-name').classList.add('hidden');
     document.getElementById('main-content-1').classList.remove('hidden');
-  }, 9000);
- */
+  }, 7000);
+ 
 
 document.addEventListener("mousemove", (e) => {
       follower.style.left = `${e.clientX}px`;
