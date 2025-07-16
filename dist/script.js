@@ -321,5 +321,8 @@ document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
   });
 
 
+/* 2nd-section-img-zoom-effect */
+
+
   
  })

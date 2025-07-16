@@ -597,3 +597,46 @@ left: 50%;
 
 
 
+/* 2nd-section-img-zoom */
+.scroll-zoom-img {
+  width: 380px;
+  margin-left: 70px;
+  height: 600px; /* or adjust as needed */
+  background-image: url('./src/images/bg.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out;
+
+  /* Scroll animation */
+  animation: zoom-on-scroll linear;
+  animation-timeline: view();
+  animation-range: cover 0% cover 100%;
+  animation-iteration-count: 1;
+}
+
+@keyframes zoom-on-scroll {
+  to {
+    background-size: 130%; /* zoom effect */
+  }
+}
+
+
+
+.custom-border-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #ff9800;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s ease-in-out;
+  z-index: 10;
+}
+
+.custom-border-box:hover::before {
+  transform: scaleX(1);
+}

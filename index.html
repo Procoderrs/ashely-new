@@ -8,6 +8,7 @@
   <link href="./src/output.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
+
   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
@@ -422,7 +423,7 @@
     <div class="bg-black flex items-center justify-between z-[999]">
 
    
-    <div class="fixed left-16 top-8  mix-blend-difference hidden between-sm:inline">
+    <div class="fixed left-16 top-8  mix-blend-difference hidden between-2xl:inline">
       <h1 class="text-[42px] text-white bg-transparent   ">A.</h1>
 
 
@@ -468,88 +469,92 @@
     <section data-bg="dark" class="  relative bg-transparent  overflow-hidden ">
       <!-- mobile-nav -->
      <!-- Top Bar Always Visible (with A. and Menu Icon) -->
-<div class="fixed top-0 left-0 right-0 z-[9998] bg-black px-6 py-6 flex items-center justify-between border-b border-gray-800 between-sm:hidden">
+<div class="fixed top-0 left-0 right-0 z-[9999] bg-black p-4 flex items-center justify-between border-b border-gray-800 between-2xl:hidden">
   <h1 class="text-white text-[36px]">A.</h1>
   
   <!-- Menu Icon Button -->
   <button id="mobileMenuBtn" class="lg:hidden">
-    <img src="./src/images/menu.svg" alt="Open menu" class="w-8 h-8" />
+    <img src="./src/images/menu.svg" alt="Open menu" class="w-8 h-8 cursor-pointer" />
   </button>
 </div>
 
 <!-- Mobile Menu Overlay -->
 <div id="mobileOverlay"
-  class="fixed inset-0 bg-black z-[9999]  hidden opacity-0 transition-opacity duration-500 ease-in-out p-6 between-sm:hidden  flex flex-col items-start space-y-6">
+  class="fixed inset-0 bg-black z-[9999]  hidden opacity-0 transition-opacity duration-500 ease-in-out p-4 between-sm:hidden  flex flex-col items-start space-y-6">
 
   <!-- Close Button (Only inside overlay) -->
-  <div class="flex w-full items-center p-4 justify-between border-b border-gray-800 ">
+ 
+ 
+
+ 
+<div class="fixed top-0 left-0 right-0 z-[9999] bg-black p-4 flex items-center justify-between border-b border-gray-800 between-2xl:hidden">
       <h1 class="text-white text-[36px]">A.</h1>
 
     <button id="mobileCloseBtn">
-      <img src="./src/images/cross.svg" alt="Close" class="w-6 h-6" />
+      <img src="./src/images/cross.svg" alt="Close" class="w-8 h-8  cursor-pointer" />
     </button>
   </div>
 
   <!-- Menu Items -->
-  <ul class="flex flex-col gap-4 mt-6 w-full items-center justify-center">
+  <ul class="flex flex-col gap-4 mt-36 w-full items-center justify-center">
    
     <li class="group relative">
-      <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+      <span class="hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
                    opacity-0 scale-0 transition-all duration-300 ease-in-out 
                    group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
       <a href="/"
-         class="inline-block text-[#ff9800] font-medium text-[22px] lg:text-[28px] 
+         class="inline-block text-[#ff9800] font-medium text-[26px] lg:text-[28px] 
                 transition-all duration-300 ease-in-out 
-                group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
+                group-hover:translate-x-2 between-2xl:group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
         Homepage
       </a>
     </li>
 
 
     <li class="group relative">
-      <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+      <span class="hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
                    opacity-0 scale-0 transition-all duration-300 ease-in-out 
                    group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
       <a href="/"
-         class="inline-block text-white font-medium text-[22px] lg:text-[28px] 
+         class="inline-block text-white font-medium text-[26px] lg:text-[28px] 
                 transition-all duration-300 ease-in-out 
-                group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
+                group-hover:translate-x-2  between-2xl:group-hover:translate-x-8  group-hover:scale-105 group-hover:text-[#ff9800]">
         Portfolio
       </a>
     </li>
 
     <li class="group relative">
-      <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+      <span class="hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
                    opacity-0 scale-0 transition-all duration-300 ease-in-out 
                    group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
       <a href="/"
-         class="inline-block text-white font-medium text-[22px] lg:text-[28px] 
+         class="inline-block text-white font-medium text-[26px] lg:text-[28px] 
                 transition-all duration-300 ease-in-out 
-                group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
+                group-hover:translate-x-2 between-2xl:group-hover:translate-x-8  group-hover:scale-105 group-hover:text-[#ff9800]">
         Services
       </a>
     </li>
 
     <li class="group relative">
-      <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+      <span class="hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
                    opacity-0 scale-0 transition-all duration-300 ease-in-out 
                    group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
       <a href="/"
-         class="inline-block text-white font-medium text-[22px] lg:text-[28px] 
+         class="inline-block text-white font-medium text-[26px] lg:text-[28px] 
                 transition-all duration-300 ease-in-out 
-                group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
+                group-hover:translate-x-2  between-2xl:group-hover:translate-x-8  group-hover:scale-105 group-hover:text-[#ff9800]">
         Contact
       </a>
     </li>
 
     <li class="group relative">
-      <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+      <span class=" hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
                    opacity-0 scale-0 transition-all duration-300 ease-in-out 
                    group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
       <a href="/"
-         class="inline-block text-white font-medium text-[22px] lg:text-[28px] 
+         class="inline-block text-white font-medium text-[26px] lg:text-[28px] 
                 transition-all duration-300 ease-in-out 
-                group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
+                group-hover:translate-x-2 between-2xl:group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
         Blog
       </a>
     </li>
@@ -562,15 +567,16 @@
 
 
 
-        <div class=" relative z-[999] between-2xl:px-40 pb-8 h-screen px-8 min-h-screen  bg-transparent mx-auto md:top-20 between-colg:top-32 ">
+        <div class=" relative z-[999] between-2xl:px-40 pb-8 h-screen  min-h-screen  bg-transparent mx-auto md:top-20 between-colg:top-32 ">
 
-          <div class=" absolute  md:bottom-32 2xl:bottom-40 flex flex-col items-start w-full  justify-center gap-8">
-          <h2 class=" tracking-tighter between-2xl:pt-20 md:w-[600px]  lg:pt-42   pt-24  text-white text-[34px] lg:text-[74px] md:text-[58px]">
+          <div class=" between-2xl:pt-0 lg:pt-42   pt-24">
+            <div class=" absolute  md:bottom-32 between-2xl:bottom-52 px-8 flex flex-col items-start w-full  justify-center gap-8">
+          <h2 class=" tracking-tighter  md:w-[600px]     text-white text-[34px] lg:text-[74px] md:text-[58px]">
             <span class="font-medium">Designing</span><span class=" font-thin"> a Better
             </span>  <span class="lg:leading-[100px]  ">World</span> <span class="font-thin ">Today</span>
           </h2>
 
-          <p class="font-light text-sm lg:text-base text-[#696969]  max-w-sm">
+          <p class="font-light text-base text-start text-[#696969]  max-w-sm relative w-full">
             Welcome to our world of endless imagination and boundless
             creativity. Together, let's embark on a remarkable journey where
             dreams become tangible realities.
@@ -579,9 +585,9 @@
           <div class=" flex mt-5 relative items-center max-w-full w-full justify-between text-black">
             <div class="flex items-center flex-col sm:flex-row">
               <button
-                class=" cursor-pointer w-56 h-14 lg:h-16 overflow-hidden text-center rounded-full shadow-md group hover:scale-105  transition-transform duration-300 flex items-center justify-between bg-[#ff9800] hover:bg-amber-500 px-6">
+                class=" justify-center gap-8 cursor-pointer w-48 h-14 lg:h-16 overflow-hidden text-center rounded-full shadow-md group hover:scale-105  transition-transform duration-300 flex items-center  bg-[#ff9800] hover:bg-amber-500 px-6">
                 <span
-                  class="text-black uppercase text-xs tracking-wide transform transition duration-300 group-hover:scale-105">What
+                  class="text-black uppercase  text-xs tracking-wide transform transition duration-300 group-hover:scale-105">What
                   we do</span>
                 <img src="./src/images/right-arrow.svg" alt="Arrow"
                   class="w-8 h-8 p-1 bg-black rounded-full transition-transform duration-300 group-hover:scale-105" />
@@ -590,7 +596,7 @@
 
 
               <button
-                class="cursor-pointer lg:w-64 w-56 pt-4 lg:mt-0 lg:h-20 h-14 overflow-hidden text-center rounded-full shadow-md group hover:scale-105 transition-transform duration-300 flex  content-center items-center gap-12 bg-transparent  px-6">
+                class="cursor-pointer lg:w-64 w-56 pt-4 lg:mt-0 lg:h-20 h-14 overflow-hidden text-center rounded-full shadow-md group hover:scale-105 transition-transform duration-300 flex justify-center  items-center gap-12 bg-transparent  px-6">
                 <span
                   class="text-white  uppercase text-xs flex items-center justify-center text-center tracking-wide transform transition duration-300 group-hover:scale-105">view
                   works</span>
@@ -599,14 +605,14 @@
               </button>
             </div>
 
-            <div class="relative bg-pink-500 hidden group   mr-80 mb-20 lg:flex items-center justify-center ">
+            <div class="relative  hidden group   mr-80 mb-16 lg:flex items-center justify-center ">
               <!-- Spinning circular text -->
               <svg viewBox="0 0 300 300" class="absolute   animate-spin-slow" fill="none">
                 <defs>
                   <path id="circlePath" d="M100 100 m-70 0 a70 70 0 1 1 140 0 a70 70 0 1 1 -140 0" />
                 </defs>
 
-                <text class=" circle-text  text-sm tracking-widest uppercase" textLength="1000">
+                <text class=" circle-text  text-[15px]  tracking-widest uppercase" textLength="1000">
                   <textPath xlink:href="#circlePath" startOffset="0">
                    - scroll down – scroll down – scroll down – scroll down –
                   </textPath>
@@ -626,6 +632,7 @@
               </button>
             </div>
 </div>
+          </div>
 
             <!-- ⭕️ wrapper ------------------------------------------------------------>
             
@@ -959,7 +966,7 @@
 
     <!-- ✅ Content stays above (z-20) -->
     <div class="between-2xl:px-40 px-8 between-2xl:pt-40 py-20  z-20 relative max-w-screen-2xl mx-auto w-full  ">
-      <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div class="grid grid-cols-1 lg:grid-cols-2 items-start">
         <div class="grid-1 flex flex-col gap-8">
           <h2 class="lg:text-[68px] text-[36px] leading-tight lg:leading-normal between-sm:w-[200px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out   ">
             <span class="font-medium">Discover</span>
@@ -979,9 +986,12 @@
             expertise, we produce extraordinary resuults that consistently surpass expectations.
           </p>
 
-          <div class="flex  gap-4">
-            <img src="./src/images/emma.jpg" class="w-20 h-20 rounded-full object-top" alt="founder">
-            <p class="lg:text-lg text-base lg:w-[300px] w-full fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+          <div class="flex items-center  gap-4 flex-1 ">
+<div class="flex rounded-full relative ">
+              <img src="./src/images/emma.jpg" class="w-[70px] between relative  h-[70px]  object-cover object-top  rounded-full " alt="founder">
+<button class="bg-[#ff9800] w-6 h-6 rounded-full top-8 -right-2 absolute text-lg ">"</button>
+</div>
+            <p class="lg:text-lg flex-1 text-base lg:w-[300px] pl-2  w-full fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
               <span class="font-medium">Passionately</span>
               <span class="font-medium">Creating</span>
               <span class="font-thin">Design</span>
@@ -994,10 +1004,8 @@
         </div>
 
         <div class="grid-2 scroll-zoom-wrapper fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-          <img src="./src/images/bg.jpg"
-            class=" w-full h-full  lg:pt-20 pt-12 lg:pl-[50px] relative z-10  designer-img"
-            alt="">
-        </div>
+  <div class="designer-img scroll-zoom-img"></div>
+</div>
       </div>
     </div>
     </div>
@@ -1007,7 +1015,7 @@
   <section data-bg="dark" class=" overflow-hidden bg-black ">
     <div class="relative">
       <div class=" overflow-x-hidden">
-        <div class="absolute right-0  top-24 z-10">
+        <div class="absolute right-0  top-32 z-10">
           <div class="dodecahedron-2">
             <div class="pentagon-2">
               <div></div>
@@ -1153,65 +1161,62 @@
             class="font-medium">For </span> <span class="font-medium">Your</span> <span
             class="font-thin">Business</span>
         </h4>
-        <button
-          class=" cursor-pointer fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out w-56 h-14 lg:h-16 overflow-hidden text-center rounded-full shadow-md group hover:scale-105  transition-transform duration-300 flex items-center justify-between bg-[#ff9800] hover:bg-amber-500 px-6">
-          <span
-            class="text-black uppercase text-xs tracking-wide transform transition duration-300 group-hover:scale-105">What
-            we do</span>
-          <img src="./src/images/right-arrow.svg" alt="Arrow"
-            class="w-8 h-8 p-1 bg-black rounded-full transition-transform duration-300 group-hover:scale-105" />
-        </button>
+         <button
+                class=" justify-center gap-8 cursor-pointer w-48 h-14 lg:h-16 overflow-hidden text-center rounded-full shadow-md group hover:scale-105  transition-transform duration-300 flex items-center  bg-[#ff9800] hover:bg-amber-500 px-6">
+                <span
+                  class="text-black uppercase  text-xs tracking-wide transform transition duration-300 group-hover:scale-105">What
+                  we do</span>
+                <img src="./src/images/right-arrow.svg" alt="Arrow"
+                  class="w-8 h-8 p-1 bg-black rounded-full transition-transform duration-300 group-hover:scale-105" />
+              </button>
       </div>
 
       <div class="grid between-lg:grid-cols-4 between-sm:grid-cols-2 grid-cols-1  pt-24 md:pb-24 lg:pb-0 ">
         <!-- Box 1 -->
+<div class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group h-full min-h-[400px] relative overflow-hidden border border-zinc-900 px-8 py-8 custom-border-box">
 
-        <div
-          class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  group h-full min-h-[400px]  border border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-8 py-8 overflow-hidden">
+
           <h6 class="text-white text-xl font-medium">Branding and identity design</h6>
           <p
             class="text-zinc-600 font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
             Our creative agency is a team of professionals focused on helping you...
           </p>
           <img src="./src/images/right-arrow-1.svg" alt="Arrow"
-            class="w-6 h-6 p-2 bg-zinc-600 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
+            class="w-8 h-8 p-1 between-lg:bg-zinc-600 bg-[#ff9800] between-lg:w-6 between-lg:h-6 between-lg:p-2 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
         </div>
 
 
         <!-- Box 2 -->
-        <div
-          class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group min-h-[400px]  border border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-8 py-8 overflow-hidden">
+<div class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group h-full min-h-[400px] relative overflow-hidden border border-zinc-900 px-8 py-8 custom-border-box">
           <h6 class="text-white text-xl font-medium">Website Design and Development</h6>
           <p
             class="text-zinc-600 font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
             Our creative agency is a team of professionals focused on helping you...
           </p>
           <img src="./src/images/right-arrow-1.svg" alt="Arrow"
-            class="w-6 h-6 p-2 bg-zinc-600 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
+            class="w-8 h-8 p-1 between-lg:bg-zinc-600 bg-[#ff9800] between-lg:w-6 between-lg:h-6 between-lg:p-2 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
         </div>
 
         <!-- Box 3 -->
-        <div
-          class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group min-h-[400px]  border border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-8 py-8 overflow-hidden">
+<div class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group h-full min-h-[400px] relative overflow-hidden border border-zinc-900 px-8 py-8 custom-border-box">
           <h6 class="text-white text-xl font-medium">Advertising and Marketing Campaigns</h6>
           <p
             class="text-zinc-600 font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
             Our creative agency is a team of professionals focused on helping you...
           </p>
           <img src="./src/images/right-arrow-1.svg" alt="Arrow"
-            class="w-6 h-6 p-2 bg-zinc-600 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
-        </div>
+            class="w-8 h-8 p-1 between-lg:bg-zinc-600 bg-[#ff9800] between-lg:w-6 between-lg:h-6 between-lg:p-2 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
+          </div>
 
         <!-- Box 4 -->
-        <div
-          class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  group min-h-[400px]  border border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-8 py-8 overflow-hidden">
+<div class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group h-full min-h-[400px] relative overflow-hidden border border-zinc-900 px-8 py-8 custom-border-box">
           <h6 class="text-white text-xl font-medium">Creative Consulting and Development</h6>
           <p
             class="text-zinc-600 font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
             Our creative agency is a team of professionals focused on helping you...
           </p>
           <img src="./src/images/right-arrow-1.svg" alt="Arrow"
-            class="w-6 h-6 p-2 bg-zinc-600 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
+            class="w-8 h-8 p-1 between-lg:bg-zinc-600 bg-[#ff9800] between-lg:w-6 between-lg:h-6 between-lg:p-2 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
         </div>
       </div>
     </div>
@@ -1417,13 +1422,14 @@
     </p>
 <!-- Thumbnails parent -->
 <div id="imageContainer"
-     class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  items-center justify-center  min-[375px]:px-6 min-[425px]:px-4 pt-12
-        grid gap-4            
-           
-       grid-cols-3 min-[375px]:gap-5  
+     class=" fade-up opacity-0 translate-y-10  transition-all duration-700 ease-in-out  items-center justify-center  min-[375px]:px-6 min-[425px]:px-4 pt-12
+        grid       
+            gap-y-0 gap-x-0
+       grid-cols-2 min-[375px]:gap-5  
         min-[425px]:grid-cols-4  
         min-[690px]:flex     
         min-[690px]:flex-nowrap
+        mx-auto
      ">
 </div>
 
@@ -1489,7 +1495,8 @@
    <h6 class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:text-[42px] font-medium pb-8 lg:pb-0 text-[30px]">Popular Publications:</h6>
   <div class="flex items-center gap-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
     <p class="uppercase text-xs font-medium fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">view all</p>
-      <button class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center">
+      <button class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
+
         <img src="./src/images/black.svg" class="rotate-180" alt="">
       </button>
   </div>
@@ -1511,7 +1518,7 @@
 
        <div class="flex items-center gap-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
     <p class="uppercase text-xs font-medium tracking-widest fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">read more</p>
-      <button class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center">
+      <button class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
         <img src="./src/images/black.svg" class="rotate-180" alt="">
       </button>
   </div>
@@ -1532,7 +1539,8 @@
 
        <div class="flex items-center gap-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
     <p class="uppercase text-xs font-medium tracking-widest">read more</p>
-      <button class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center">
+      <button class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
+
         <img src="./src/images/black.svg" class="rotate-180" alt="">
       </button>
   </div>
