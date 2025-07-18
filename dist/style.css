@@ -1,6 +1,59 @@
  html{
   scroll-behavior: smooth;
 }
+
+html, body {
+  overflow-y: scroll;
+  scrollbar-width: none;             /* Firefox */
+  -ms-overflow-style: none;          /* Internet Explorer 10+ */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;                     /* Chrome, Safari, Opera */
+}
+
+/* scroll-bar-color */
+
+
+/* Customize the scrollbar */
+/* Custom scroll bar setup */
+/* width */
+/* ::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #ff9800; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body{
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none; 
+}
+ */
+
+
+
+ /* body {
+  overflow-y: scroll;
+  scrollbar-width: none;           
+}
+body::-webkit-scrollbar {
+  display: none;                   
+} */
 /*
 body {
   height: 100%;
@@ -604,9 +657,11 @@ left: 50%;
 
 /* 2nd-section-img-zoom */
 .scroll-zoom-img {
-  width: 380px;
-  margin-left: 70px;
-  height: 600px; /* or adjust as needed */
+  
+  width: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 400px; /* or adjust as needed */
   background-image: url('./src/images/bg.jpg');
   background-size: 100%;
   background-position: center;
@@ -644,4 +699,100 @@ left: 50%;
 
 .custom-border-box:hover::before {
   transform: scaleX(1);
+}
+
+#scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 0;
+  background-color: #ff9800;
+  z-index: 9999;
+  transition: top 0.2s ease-out;
+}
+
+
+
+
+/* dodecohedron 5 */
+
+.pentagon-6 {
+  position: absolute;
+  width: 200px; /* 100 * 2 */
+  opacity: 0.8;
+}
+
+/* Top ring (Faces 1–5) */
+.pentagon-6:nth-child(1) {
+  transform: rotateY(0deg) translateZ(138px) rotateX(26.5deg); /* 69 * 2 */
+}
+.pentagon-6:nth-child(2) {
+  transform: rotateY(72deg) translateZ(138px) rotateX(26.5deg);
+}
+.pentagon-6:nth-child(3) {
+  transform: rotateY(144deg) translateZ(138px) rotateX(26.5deg);
+}
+.pentagon-6:nth-child(4) {
+  transform: rotateY(216deg) translateZ(138px) rotateX(26.5deg);
+}
+.pentagon-6:nth-child(5) {
+  transform: rotateY(288deg) translateZ(138px) rotateX(26.5deg);
+}
+
+/* Bottom ring (Faces 6–10) */
+.pentagon-6:nth-child(6) {
+  bottom: 0;
+  transform: rotateY(0deg) translateZ(-138px) rotateX(206.5deg);
+}
+.pentagon-6:nth-child(7) {
+  bottom: 0;
+  transform: rotateY(72deg) translateZ(-138px) rotateX(206.5deg);
+}
+.pentagon-6:nth-child(8) {
+  bottom: 0;
+  transform: rotateY(144deg) translateZ(-138px) rotateX(206.5deg);
+}
+.pentagon-6:nth-child(9) {
+  bottom: 0;
+  transform: rotateY(216deg) translateZ(-138px) rotateX(206.5deg);
+}
+.pentagon-6:nth-child(10) {
+  bottom: 0;
+  transform: rotateY(288deg) translateZ(-138px) rotateX(206.5deg);
+}
+
+/* Caps */
+.pentagon-6:nth-child(11) {
+  transform: translateZ(138px) rotateX(-90deg);
+}
+.pentagon-6:nth-child(12) {
+  bottom: 0;
+  transform: translateZ(-138px) rotateX(90deg);
+}
+
+/* Pentagon Sides */
+.pentagon-6 div {
+  position: absolute;
+  width: 200px;  /* 100 * 2 */
+  height: 138px; /* 69 * 2 */
+  transform-origin: bottom;
+  border-top: 1px solid rgb(88, 86, 86);
+}
+
+.pentagon-6 div:nth-child(1) { transform: rotate(0deg); }
+.pentagon-6 div:nth-child(2) { transform: rotate(72deg); }
+.pentagon-6 div:nth-child(3) { transform: rotate(144deg); }
+.pentagon-6 div:nth-child(4) { transform: rotate(216deg); }
+.pentagon-6 div:nth-child(5) { transform: rotate(288deg); }
+
+/* Dodecahedron Container */
+.dodecahedron-6 {
+  position: absolute;
+  top: -30%;
+  right: 25%;
+  width: 26px;  /* 13 * 2 */
+  height: 446px; /* 223 * 2 */
+  transform-style: preserve-3d;
+  animation: rotate 60s infinite linear;
 }

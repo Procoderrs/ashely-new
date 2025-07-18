@@ -10,4 +10,7 @@
   --breakpoint-between-md:55.75rem; /* 892px */
   --breakpoint-between-sm: 43.438rem; /* 695px */
   --breakpoint-between-coxs:32.625rem;  /* 522px */
-}
+  --breakpoint-small:23.438rem; /* 375px */
+  --breakpoint-med:26.563rem; /* 425px */
+  --breakpoint-mad:46.563rem; /* 745px */
+--color-gray:rgba(0,0,0,0.1);}

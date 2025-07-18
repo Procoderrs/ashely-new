@@ -15,24 +15,107 @@
 
 <body class="font-display">
 
+  <div id="scroll-progress-bar"></div>
 
-  <div id="desktopOverlay"
-    class="fixed inset-0 bg-black z-[9999] hidden   opacity-0 transition-opacity transition-all  duration-500 ease-in-out flex flex-col items-start px-20 justify-center space-y-8">
+  <div class="custom:hidden">
 
-    <!-- A. ICON -->
-    <div class="flex items-center justify-between">
-<h1 class="lg:text-[42px] text-white bg-transparent absolute top-10 left-16">A.</h1>
 
-    <!-- Close button -->
-    <button id="desktopCloseBtn" class="absolute cursor-pointer top-10 right-16 text-white text-3xl">
-      <img class="w-6 h-6" src="./src/images/cross.svg" />
-    </button>
-    </div>
+    <div id="desktopOverlay"
+      class=" fixed inset-0  bg-black z-[9999] hidden   opacity-0 transition-opacity transition-all  duration-500 ease-in-out flex flex-col items-start px-20 justify-center space-y-8">
 
-    <!-- Menu Items -->
-  <div class="flex flex-col gap-6 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
- <div class="px-40">
-  <ul class="flex flex-col gap-4 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+      <!-- A. ICON -->
+      <div class="flex items-center   justify-between">
+        <h1 class="lg:text-[42px] text-white bg-transparent absolute top-10 left-16">A.</h1>
+
+        <!-- Close button -->
+        <button id="desktopCloseBtn" class="absolute cursor-pointer top-10 right-16 text-white text-3xl">
+          <img class="w-6 h-6" src="./src/images/cross.svg" />
+        </button>
+      </div>
+
+      <!-- Menu Items -->
+      <div class=" flex-col gap-6 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+        <div class="px-40">
+          <ul class="flex flex-col gap-4 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+
+
+            <li class="group relative">
+              <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+                   opacity-0 scale-0 transition-all duration-300 ease-in-out 
+                   group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
+              <a href="/" class="inline-block text-[#ff9800] font-medium text-[22px] lg:text-[28px] 
+                transition-all duration-300 ease-in-out 
+                group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
+                Homepage
+              </a>
+            </li>
+
+
+            <li class="group relative">
+              <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+                   opacity-0 scale-0 transition-all duration-300 ease-in-out 
+                   group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
+              <a href="/" class="inline-block text-white font-medium text-[22px] lg:text-[28px] 
+                transition-all duration-300 ease-in-out 
+                group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
+                Portfolio
+              </a>
+            </li>
+
+            <li class="group relative">
+              <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+                   opacity-0 scale-0 transition-all duration-300 ease-in-out 
+                   group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
+              <a href="/" class="inline-block text-white font-medium text-[22px] lg:text-[28px] 
+                transition-all duration-300 ease-in-out 
+                group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
+                Services
+              </a>
+            </li>
+
+            <li class="group relative">
+              <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+                   opacity-0 scale-0 transition-all duration-300 ease-in-out 
+                   group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
+              <a href="/" class="inline-block text-white font-medium text-[22px] lg:text-[28px] 
+                transition-all duration-300 ease-in-out 
+                group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
+                Contact
+              </a>
+            </li>
+
+            <li class="group relative">
+              <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+                   opacity-0 scale-0 transition-all duration-300 ease-in-out 
+                   group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
+              <a href="/" class="inline-block text-white font-medium text-[22px] lg:text-[28px] 
+                transition-all duration-300 ease-in-out 
+                group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
+                Blog
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+
+
+      <!-- 1400px screen -->
+
+
+
+
+
+      <!-- Menu Items -->
+      <!-- <div class=" custom:grid hidden px-40   grid-cols-2 ">
+
+  <div class="   flex-col gap-6 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+  <div class="grid-1 border-r   border-white">
+
+  
+  <ul class="flex flex-col gap-4  items-center justify-center fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
     
 
 <li class="group relative">
@@ -97,1570 +180,1753 @@
     </li>
 
   </ul>
+  </div>
+  <div class="grid-2">
+
+  </div>
 </div>
 
+    </div> -->
+
+
+
+
+
+
     </div>
+
   </div>
 
 
+  <!-- 1400px -->
+  <div id="desktopOverlayAbove"
+    class=" fixed inset-0   z-[9999] hidden h-screen min-h-screen bg-black h-full w-full   opacity-0 transition-opacity transition-all  duration-500 ease-in-out   ">
 
-   <div id="pre-heading" class="flex justify-center bg-black items-center h-screen flex-col gap-2 text-4xl">
+
+
+
+    <div class=" div-6 overflow-hidden z-0     w-full   ">
+          <div id="main-content" class="text-white">
+            <div class="shadow"></div>
+            <div class="dodecahedron-6 absolute top-0 right-0 hidden custom:block" id="dodecahedron-6">
+              <div class="pentagon-6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+   <div class="grid grid-cols-[45%_1fr]  h-screen">
+  <!-- Left Column with Border -->
+  <div class="border-r h-full border-white">
+    <div class=" px-30 py-60 relative ">
+      <!-- Logo -->
+      <h1 class="lg:text-[42px] text-white absolute top-10 left-16 bg-transparent">A.</h1>
+
+      <!-- Menu Items -->
+      <div class="px-40 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+        <ul class="flex flex-col gap-4">
+          <!-- Menu List Item -->
+          <li class="group relative">
+            <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full opacity-0 scale-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
+            <a href="/" class="inline-block text-[#ff9800] font-medium text-[34px] transition-all duration-300 ease-in-out group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">Homepage</a>
+          </li>
+
+          <li class="group relative">
+            <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full opacity-0 scale-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
+            <a href="/" class="inline-block text-[#cccccc] font-medium text-[34px] transition-all duration-300 ease-in-out group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">Portfolio</a>
+          </li>
+
+          <li class="group relative">
+            <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full opacity-0 scale-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
+            <a href="/" class="inline-block text-[#cccccc] font-medium text-[34px] transition-all duration-300 ease-in-out group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">Services</a>
+          </li>
+
+          <li class="group relative">
+            <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full opacity-0 scale-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
+            <a href="/" class="inline-block text-[#cccccc] font-medium text-[34px] transition-all duration-300 ease-in-out group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">Newsletter</a>
+          </li>
+
+          <li class="group relative">
+            <span class="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full opacity-0 scale-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
+            <a href="/" class="inline-block text-[#cccccc] font-medium text-[34px] transition-all duration-300 ease-in-out group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">Other Pages</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Column -->
+  <div class="relative  py-50 px-20 ">
+    <!-- Close Button -->
+    <button id="desktopCloseBtnAbove" class="absolute top-10 right-16 text-white text-3xl cursor-pointer">
+      <img class="w-6 h-6" src="./src/images/cross.svg" />
+    </button>
+
+    <!-- Additional Content -->
+    <div class="grid grid-cols-2 ">
+      <div class="grid-1 grid-rows-2 ">
+          <div class=" pb-12 border-b border-[#1a1a1a] w-full">
+          <h6 class="pb-4 text-white text-lg">Projects</h6>
+         <ul class="flex flex-col gap-4 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                <li
+                  class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105    ">
+                  <a href="/">Interior design studio</a></li>
+                <li
+                  class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105   ">
+                  <a href="/">Home Security Camera</a></li>
+                <li
+                  class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105   ">
+                  <a href="/">Kemia Honest Skincare</a></li>
+                <li
+                  class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105  ">
+                  <a href="/">Cascade of Lava</a></li>
+<li
+                  class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105  ">
+                  <a href="/">Air Pro by Molekule</a></li>
+<li
+                  class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105  ">
+                  <a href="/">Tony's Chocolonely</a></li>
+
+              </ul>
+          </div>
+          <div class=" pt-8">
+           <div
+              class="flex flex-col l fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+              <p
+                class="text-white text-lg font-medium fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+                Canada</p>
+              <p
+                class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] w-[150px]   text-[15px] font-light ">
+                71 South Los Carneros Road,
+                California +51 174 705 812
+              </p>
+            </div>
+
+          </div>
+
+      </div>
+      <div class="grid-1 grid-rows-2 ">
+          <div class=" pb-16 border-b border-[#1a1a1a] w-full min-h-[316.5px]">
+          <h6 class="pb-4 text-white">Useful links</h6>
+         <ul class="flex flex-col gap-4 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                <li
+                  class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105    ">
+                  <a href="/">Privacy Policy</a></li>
+                <li
+                  class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105   ">
+                  <a href="/">Terms and conditions</a></li>
+                <li
+                  class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105   ">
+                  <a href="/">cookie Policy</a></li>
+                <li
+                  class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105  ">
+                  <a href="/">Careers</a></li>
+
+              </ul>
+          </div>
+          <div class=" pt-8">
+            <div
+              class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out flex flex-col  ">
+              <p
+                class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-white text-lg font-medium">
+                Germany</p>
+              <p
+                class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  text-[#666666] w-[200px] font-light  ">
+                Leehove 40, 2678 MC De Lier,
+                Netherlands +31174 705 811
+              </p>
+            </div>
+
+
+          </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+
+
+  <!--    <div id="pre-heading" class=" flex justify-center bg-black items-center h-screen flex-col gap-2 text-4xl">
     <h2 class="text-white">
       <span class="animate-word delay-0 font-thin">Pioneering</span>
       <span class="animate-word delay-1 ">Creating </span>
       <span class="animate-word delay-2 font-thin">Excellence</span>
 
     </h2>
-  </div>
+  </div> -->
 
-  <div id="pre-btn" class="hidden flex items-center justify-center bg-black   h-screen">
+  <!-- <div id="pre-btn" class="hidden flex items-center justify-center bg-black   h-screen">
     <div class="relative ">
       <button class="border-[3px]  py-2    bg-[#ff9800] animate-border-slide">
         <span class="opacity-0">button</span>
       </button>
     </div>
-  </div>
+  </div> -->
 
-  <div id="pre-name" class="hidden flex bg-black justify-center items-center h-screen text-4xl font-thin">
+  <!-- <div id="pre-name" class="hidden flex bg-black justify-center items-center h-screen text-4xl font-thin">
     <p class="text-white">Ashley.com</p>
-  </div>  
+  </div> -->
 
 
 
 
 
   <div id="mouse-circle"></div>
-    <div id="main-content-1" class="hidden">
+  <div id="main-content-1" class="">
 
-  <!--  <div class=" relative  ">
+    
 
 
-    <div class=" div-0 overflow-hidden   z-0   w-full h-screen md:h-full bg-black">
-      <div id="main-content" class="text-white">
-        <div class="shadow"></div>
-        <div class="dodecahedron" id="dodecahedron">
-          <div class="pentagon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+    
+
+
+  </div>
+
+    <!-- sidebar  -->
+    <div class=" text-white header">
+      <div class="bg-black flex items-center justify-between z-[999]">
+
+
+        <div class="fixed left-16 top-8  mix-blend-difference custom:hidden hidden between-2xl:inline">
+          <h1 class="text-[42px] text-white bg-transparent   ">A.</h1>
+
+
+
         </div>
+        <!-- navbar -->
+        <nav id="desktopMenuBtn"
+          class="right-16 cursor-pointer hidden lg:block lg:fixed custom:hidden top-12 z-30 bg-transparent mix-blend-difference menu">
+          <img id="cross" class="w-8 text-white  rounded" src="./src/images/menu.svg" alt="" />
+        </nav>
 
+
+        <!-- above 1400 -->
+
+
+        <div class="fixed left-16 top-8  mix-blend-difference hidden custom:inline custom:fixed ">
+          <h1 class="text-[42px] text-white bg-transparent   ">A.</h1>
+
+
+
+        </div>
+        <!-- navbar -->
+        <nav id="desktopMenuBtnAbove"
+          class="right-16 cursor-pointer hidden  custom:fixed custom:inline top-12 z-30 bg-transparent mix-blend-difference menu">
+          <img id="cross" class="w-8 text-white  rounded" src="./src/images/menu.svg" alt="" />
+        </nav>
 
 
 
       </div>
-    </div>
-
-
-
-    <div class=" div-1 overflow-hidden z-0 hidden xl:block    w-full h-screen md:h-full ">
-      <div id="main-content" class="text-white">
-        <div class="shadow"></div>
-        <div class="dodecahedron-4 absolute top-10 left-0" id="dodecahedron-4">
-          <div class="pentagon-4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class=" div-2 overflow-hidden  z-0 xl:block  w-full h-screen md:h-full bg-black">
-      <div id="main-content" class="text-white">
-        <div class="shadow"></div>
-        <div class="dodecahedron-5" id="dodecahedron-5">
-          <div class="pentagon-5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="pentagon-5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div> -->
-
-  <!-- sidebar  -->
-  <div class=" text-white header">
-    <div class="bg-black flex items-center justify-between z-[999]">
-
-   
-    <div class="fixed left-16 top-8  mix-blend-difference hidden between-2xl:inline">
-      <h1 class="text-[42px] text-white bg-transparent   ">A.</h1>
-
-
-
-    </div>
-    <!-- navbar -->
-    <nav  id="desktopMenuBtn"  class="right-16 cursor-pointer hidden between-sm:block between-sm:fixed top-12 z-30 bg-transparent mix-blend-difference menu">
-      <img id="cross" class="w-8 text-white  rounded" src="./src/images/menu.svg" alt="" />
-    </nav>
-     </div>
-    <div
-      class="fixed top-[550px] left-16 h-[350px] w-[300px] mix-blend-difference p-4 z-30 transform -rotate-90 origin-top-left">
-      <h3 class="text-xs uppercase tracking-wider hidden lg:block text-white  z-30">
-        homepage
-      </h3>
-    </div>
-
-<div id="backToTop"
-    class=" hidden lg:fixed top-[550px] -right-16 z-30 transform -rotate-90 origin-top-left  mix-blend-difference">
-    <div class="flex items-center gap-5 p-4">
-      <div class="mix-blend-difference">
-        <h3 class="text-xs uppercase tracking-widest text-white z-30">
-          back to top
+      <div
+        class="lg:fixed hidden top-[550px] left-16 h-[350px] w-[300px] mix-blend-difference p-4 z-30 transform -rotate-90 origin-top-left">
+        <h3 class="text-xs uppercase tracking-wider hidden lg:block text-white  z-30">
+          homepage
         </h3>
       </div>
-      <div class="p-1 rounded-full mix-blend-difference">
-        <img src="./src/images/down-arrow.svg" class="w-6 h-6 rotate-270 bg-transparent rounded-full" alt="" />
+
+
+
+      <!-- here is the issue -->
+      <div id="backToTop"
+        class=" hidden lg:fixed top-[550px] -right-16 z-30 transform -rotate-90 origin-top-left  mix-blend-difference">
+        <div class="flex items-center gap-5 p-4">
+          <div class="mix-blend-difference">
+            <h3 class="text-xs uppercase tracking-widest text-white z-30">
+              back to top
+            </h3>
+          </div>
+          <div class="p-1 rounded-full bg-[rgba(0,0,0,0.1)]  ">
+            <div class="mix-blend-difference">
+              <img src="./src/images/down-arrow.svg" class="w-6 h-6 p-1 rotate-270" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  </div>
-  
 
-  <!-- mobile navbar -->
+    <!-- mobile navbar -->
 
 
 
 
-  <!-- banner   -->
-  <div class="bg-black" id="banner">
+    <!-- banner   -->
+    <div class="bg-black" id="banner">
 
-    <section data-bg="dark" class="  relative bg-transparent  overflow-hidden ">
-      <!-- mobile-nav -->
-     <!-- Top Bar Always Visible (with A. and Menu Icon) -->
-<div class="fixed top-0 left-0 right-0 z-[9999] bg-black p-4 flex items-center justify-between border-b border-gray-800 between-2xl:hidden">
-  <h1 class="text-white text-[36px]">A.</h1>
-  
-  <!-- Menu Icon Button -->
-  <button id="mobileMenuBtn" class="lg:hidden">
-    <img src="./src/images/menu.svg" alt="Open menu" class="w-8 h-8 cursor-pointer" />
-  </button>
-</div>
+      <section data-bg="dark" class="  relative bg-transparent  overflow-hidden ">
+        <!-- mobile-nav -->
+        <!-- Top Bar Always Visible (with A. and Menu Icon) -->
+        <div
+          class="fixed top-0 left-0 right-0 z-[9999] bg-black p-4 flex items-center justify-between border-b border-gray-800 between-2xl:hidden">
+          <h1 class="text-white text-[36px]">A.</h1>
 
-<!-- Mobile Menu Overlay -->
-<div id="mobileOverlay"
-  class="fixed inset-0 bg-black z-[9999]  hidden opacity-0 transition-opacity duration-500 ease-in-out p-4 between-sm:hidden  flex flex-col items-start space-y-6">
+          <!-- Menu Icon Button -->
+          <button id="mobileMenuBtn" class="lg:hidden">
+            <img src="./src/images/menu.svg" alt="Open menu" class="w-8 h-8 cursor-pointer" />
+          </button>
+        </div>
 
-  <!-- Close Button (Only inside overlay) -->
- 
- 
+        <!-- Mobile Menu Overlay -->
+        <div id="mobileOverlay"
+          class="fixed inset-0 bg-black z-[9999]  hidden opacity-0 transition-opacity duration-500 ease-in-out p-4 between-sm:hidden  flex flex-col items-start space-y-6">
 
- 
-<div class="fixed top-0 left-0 right-0 z-[9999] bg-black p-4 flex items-center justify-between border-b border-gray-800 between-2xl:hidden">
-      <h1 class="text-white text-[36px]">A.</h1>
+          <!-- Close Button (Only inside overlay) -->
 
-    <button id="mobileCloseBtn">
-      <img src="./src/images/cross.svg" alt="Close" class="w-8 h-8  cursor-pointer" />
-    </button>
-  </div>
 
-  <!-- Menu Items -->
-  <ul class="flex flex-col gap-4 mt-36 w-full items-center justify-center">
-   
-    <li class="group relative">
-      <span class="hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+
+
+          <div
+            class="fixed top-0 left-0 right-0 z-[9999] bg-black p-4 flex items-center justify-between border-b border-gray-800 between-2xl:hidden">
+            <h1 class="text-white text-[36px]">A.</h1>
+
+            <button id="mobileCloseBtn">
+              <img src="./src/images/cross.svg" alt="Close" class="w-8 h-8  cursor-pointer" />
+            </button>
+          </div>
+
+          <!-- Menu Items -->
+          <ul class="flex flex-col gap-4 mt-36 w-full items-center justify-center">
+
+            <li class="group relative">
+              <span class="hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
                    opacity-0 scale-0 transition-all duration-300 ease-in-out 
                    group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
-      <a href="/"
-         class="inline-block text-[#ff9800] font-medium text-[26px] lg:text-[28px] 
+              <a href="/"
+                class="inline-block text-[#ff9800] font-medium text-lg lg:text-[28px] 
                 transition-all duration-300 ease-in-out 
                 group-hover:translate-x-2 between-2xl:group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
-        Homepage
-      </a>
-    </li>
+                Homepage
+              </a>
+            </li>
 
 
-    <li class="group relative">
-      <span class="hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+            <li class="group relative">
+              <span class="hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
                    opacity-0 scale-0 transition-all duration-300 ease-in-out 
                    group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
-      <a href="/"
-         class="inline-block text-white font-medium text-[26px] lg:text-[28px] 
+              <a href="/"
+                class="inline-block text-white font-medium text-lg lg:text-[28px] 
                 transition-all duration-300 ease-in-out 
                 group-hover:translate-x-2  between-2xl:group-hover:translate-x-8  group-hover:scale-105 group-hover:text-[#ff9800]">
-        Portfolio
-      </a>
-    </li>
+                Portfolio
+              </a>
+            </li>
 
-    <li class="group relative">
-      <span class="hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+            <li class="group relative">
+              <span class="hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
                    opacity-0 scale-0 transition-all duration-300 ease-in-out 
                    group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
-      <a href="/"
-         class="inline-block text-white font-medium text-[26px] lg:text-[28px] 
+              <a href="/"
+                class="inline-block text-white font-medium text-lg lg:text-[28px] 
                 transition-all duration-300 ease-in-out 
                 group-hover:translate-x-2 between-2xl:group-hover:translate-x-8  group-hover:scale-105 group-hover:text-[#ff9800]">
-        Services
-      </a>
-    </li>
+                Services
+              </a>
+            </li>
 
-    <li class="group relative">
-      <span class="hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+            <li class="group relative">
+              <span class="hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
                    opacity-0 scale-0 transition-all duration-300 ease-in-out 
                    group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
-      <a href="/"
-         class="inline-block text-white font-medium text-[26px] lg:text-[28px] 
+              <a href="/"
+                class="inline-block text-white font-medium text-lg lg:text-[28px] 
                 transition-all duration-300 ease-in-out 
                 group-hover:translate-x-2  between-2xl:group-hover:translate-x-8  group-hover:scale-105 group-hover:text-[#ff9800]">
-        Contact
-      </a>
-    </li>
+                Newsletter
+              </a>
+            </li>
 
-    <li class="group relative">
-      <span class=" hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
+            <li class="group relative">
+              <span class=" hidden between-2xl:absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#ff9800] rounded-full 
                    opacity-0 scale-0 transition-all duration-300 ease-in-out 
                    group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-4 z-[-1]"></span>
-      <a href="/"
-         class="inline-block text-white font-medium text-[26px] lg:text-[28px] 
+              <a href="/"
+                class="inline-block text-white font-medium text-lg lg:text-[28px] 
                 transition-all duration-300 ease-in-out 
                 group-hover:translate-x-2 between-2xl:group-hover:translate-x-8 group-hover:scale-105 group-hover:text-[#ff9800]">
-        Blog
-      </a>
-    </li>
+               Otherpages
+              </a>
+            </li>
 
-  </ul>
-</div>
-
-
-      <div class="max-w-screen-2xl w-full mx-auto">
-
-
-
-        <div class=" relative z-[999] between-2xl:px-40 pb-8 h-screen  min-h-screen  bg-transparent mx-auto md:top-20 between-colg:top-32 ">
-
-          <div class=" between-2xl:pt-0 lg:pt-42   pt-24">
-            <div class=" absolute  md:bottom-32 between-2xl:bottom-52 px-8 flex flex-col items-start w-full  justify-center gap-8">
-          <h2 class=" tracking-tighter  md:w-[600px]     text-white text-[34px] lg:text-[74px] md:text-[58px]">
-            <span class="font-medium">Designing</span><span class=" font-thin"> a Better
-            </span>  <span class="lg:leading-[100px]  ">World</span> <span class="font-thin ">Today</span>
-          </h2>
-
-          <p class="font-light text-base text-start text-[#696969]  max-w-sm relative w-full">
-            Welcome to our world of endless imagination and boundless
-            creativity. Together, let's embark on a remarkable journey where
-            dreams become tangible realities.
-          </p>
-
-          <div class=" flex mt-5 relative items-center max-w-full w-full justify-between text-black">
-            <div class="flex items-center flex-col sm:flex-row">
-              <button
-                class=" justify-center gap-8 cursor-pointer w-48 h-14 lg:h-16 overflow-hidden text-center rounded-full shadow-md group hover:scale-105  transition-transform duration-300 flex items-center  bg-[#ff9800] hover:bg-amber-500 px-6">
-                <span
-                  class="text-black uppercase  text-xs tracking-wide transform transition duration-300 group-hover:scale-105">What
-                  we do</span>
-                <img src="./src/images/right-arrow.svg" alt="Arrow"
-                  class="w-8 h-8 p-1 bg-black rounded-full transition-transform duration-300 group-hover:scale-105" />
-              </button>
-
-
-
-              <button
-                class="cursor-pointer lg:w-64 w-56 pt-4 lg:mt-0 lg:h-20 h-14 overflow-hidden text-center rounded-full shadow-md group hover:scale-105 transition-transform duration-300 flex justify-center  items-center gap-12 bg-transparent  px-6">
-                <span
-                  class="text-white  uppercase text-xs flex items-center justify-center text-center tracking-wide transform transition duration-300 group-hover:scale-105">view
-                  works</span>
-                <img src="./src/images/down-arrow.svg" alt="Arrow"
-                  class="w-8 h-8 p-1 bg-[#383838] -rotate-90 rounded-full transition-transform duration-300 group-hover:scale-105" />
-              </button>
-            </div>
-
-            <div class="relative  hidden group   mr-80 mb-16 lg:flex items-center justify-center ">
-              <!-- Spinning circular text -->
-              <svg viewBox="0 0 300 300" class="absolute   animate-spin-slow" fill="none">
-                <defs>
-                  <path id="circlePath" d="M100 100 m-70 0 a70 70 0 1 1 140 0 a70 70 0 1 1 -140 0" />
-                </defs>
-
-                <text class=" circle-text  text-[15px]  tracking-widest uppercase" textLength="1000">
-                  <textPath xlink:href="#circlePath" startOffset="0">
-                   - scroll down – scroll down – scroll down – scroll down –
-                  </textPath>
-                </text>
-              </svg>
-
-              <!-- Center arrow button (now hard‑centered) -->
-              <button
-                class="absolute inset-0 m-auto    z-10 group w-20 h-20 flex items-center justify-center rounded-full bg-[#ff9800] transition-colors  mr-0 duration-200 hover:bg-amber-500">
-                <!-- rotate-180 flips “down” arrow so it points up -->
-                <span
-                  class="bg-black p-1 rounded-full transition-transform duration-300 ease-in-out group-hover:scale-125">
-                  <img src="./src/images/left-arrow.svg" alt="up arrow"
-                    class="w-8 h-8  -rotate-90  transition-transform duration-400 ease-in-out group-hover:scale-125" />
-                </span>
-
-              </button>
-            </div>
-</div>
-          </div>
-
-            <!-- ⭕️ wrapper ------------------------------------------------------------>
-            
-
-
-          </div>
+          </ul>
         </div>
-      </div>
 
-      <div class=" div-0 overflow-hidden   z-0   w-full  bg-black">
-        <div id="main-content" class="text-white">
-          <div class="shadow"></div>
-          <div class="dodecahedron" id="dodecahedron">
-            <div class="pentagon">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
+
+        <div class="max-w-screen-2xl w-full mx-auto">
 
 
 
+          <div
+            class=" relative z-[999] between-2xl:px-40 pb-8 h-screen  min-h-screen  bg-transparent mx-auto md:top-20 between-colg:top-32 ">
 
-        </div>
-      </div>
+            <div class=" between-2xl:pt-44 lg:pt-42   pt-36">
+              <div
+                class=" absolute  md:bottom-32 between-2xl:bottom-32 between-md:bottom-22  between-coxs:bottom-22  med:bottom-16 px-8 flex flex-col items-start w-full  justify-center gap-8">
+                <h2 class=" tracking-tighter leading-[40px] between-coxs:leading-[60px]  md:w-[550px] between-coxs:w-[400px] between-coxs:text-[48px] mad:text-[56px] mad:w-[430px]    text-white text-[28px] lg:text-[74px] md:text-[58px]">
+                  <span class="md:font-medium">Designing</span><span class=" font-thin"> a Better
+                  </span> <span class="lg:leading-[100px]  ">World</span> <span class="font-thin ">Today</span>
+                </h2>
 
+                <p class="font-light text-xs md:text-base text-start text-[#696969] between-coxs:w-[300px]  max-w-sm relative w-full">
+                  Welcome to our world of endless imagination and boundless
+                  creativity. Together, let's embark on a remarkable journey where
+                  dreams become tangible realities.
+                </p>
 
+                <div class=" flex mt-5 relative items-start max-w-full w-full justify-between text-black">
+                  <div class="flex md:items-center items-start flex-col small:flex-row ">
+                   <button
+  class="grid grid-cols-[50%_10%] items-center justify-center gap-4 cursor-pointer w-46 h-12 lg:h-16 overflow-hidden text-center rounded-full shadow-md group transition-all duration-300 bg-[#ff9800] hover:bg-amber-500">
 
-      <div class=" div-1 overflow-hidden z-0     w-full   ">
-        <div id="main-content" class="text-white">
-          <div class="shadow"></div>
-          <div class="dodecahedron-4 absolute top-10 left-0 hidden custom:block" id="dodecahedron-4">
-            <div class="pentagon-4">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-4">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-4">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-4">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-4">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-4">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-4">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-4">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-4">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-4">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-4">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-4">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <span
+    class="text-black uppercase text-[10px] tracking-wide transition-transform duration-300 ">
+    What we do
+  </span>
 
-
-      <div class=" div-2 overflow-hidden  z-0   w-full   bg-black">
-        <div id="main-content" class="text-white">
-          <div class="shadow"></div>
-          <div class="dodecahedron-5 absolute bottom-0 left-0 hidden custom:block" id="dodecahedron-5">
-            <div class="pentagon-5">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-5">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-5">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-5">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-5">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-5">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-5">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-5">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-5">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-5">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-5">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-5">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-    </section>
+  <!-- Arrow circle container -->
+  <div
+    class="w-8 h-8 p-1 rounded-full bg-black transition-transform duration-300 group-hover:scale-125 flex items-center justify-center">
+    <img src="./src/images/right-arrow.svg" alt="Arrow" class="w-5 h-5" />
   </div>
-
-
-  <!-- second section -->
-
-
-
-  
-  <section data-bg="light" class=" overflow-hidden   bg-white ">
-
-    <div class="relative">
-
-    
-    <!-- ✅ SVG moved behind using z-[1] and proper placement -->
-    <div class="absolute z-[1] hidden lg:flex right-[35%]  items-center pointer-events-none opacity-40">
-      <svg viewBox="0 0 300 1404" xmlns="http://www.w3.org/2000/svg" class="w-[300px] h-auto text-[#D0D0D0]">
-        <g fill="#D0D0D0">
-          <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
-            d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" />
-          <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
-            d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" />
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M150 0L150 1404L149 1404L149 0L150 0Z" />
-          <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
-            d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" />
-          <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" />
-          <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
-            d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" />
-          <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
-            d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" />
-        </g>
-      </svg>
-    </div>
-
-    <!-- ✅ Content stays above (z-20) -->
-    <div class="between-2xl:px-40 px-8 between-2xl:pt-40 py-20  z-20 relative max-w-screen-2xl mx-auto w-full  ">
-      <div class="grid grid-cols-1 lg:grid-cols-2 items-start">
-        <div class="grid-1 flex flex-col gap-8">
-          <h2 class="lg:text-[68px] text-[36px] leading-tight lg:leading-normal between-sm:w-[200px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out   ">
-            <span class="font-medium">Discover</span>
-            <span class="font-medium">Our</span>
-            <span class="font-thin">Studio</span>
-          </h2>
-
-          <p class="text-[#7f7f7f] text-[15px] font-light lg:w-[400px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  ">
-            At our studio, we are collective of talented individuals ignited by our own unwavering passion for
-            transforming ideas into reality. With a harmonious blend of diverse background and a vast of skill sets, we
-            join forces to create compelling solutions for out esteemed clients.
-          </p>
-
-          <p class="text-[#7f7f7f] text-[15px]  font-light lg:w-[400px]  fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
-            Collaboration is at the heart of what we do. Our team thrives on the synergy that arises when unique
-            perspective converge, fostering an enviroment of boundless creativity. by harnessing our collective
-            expertise, we produce extraordinary resuults that consistently surpass expectations.
-          </p>
-
-          <div class="flex items-center  gap-4 flex-1 ">
-<div class="flex rounded-full relative ">
-              <img src="./src/images/emma.jpg" class="w-[70px] between relative  h-[70px]  object-cover object-top  rounded-full " alt="founder">
-<button class="bg-[#ff9800] w-6 h-6 rounded-full top-8 -right-2 absolute text-lg ">"</button>
-</div>
-            <p class="lg:text-lg flex-1 text-base lg:w-[300px] pl-2  w-full fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-              <span class="font-medium">Passionately</span>
-              <span class="font-medium">Creating</span>
-              <span class="font-thin">Design</span>
-              <span class="font-thin">Wonders</span>
-              <span class="font-medium">Unleashing</span>
-              <span class="font-thin">Boundless</span>
-              <span class="font-thin">Creativity</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="grid-2 scroll-zoom-wrapper fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-  <div class="designer-img scroll-zoom-img"></div>
-</div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- 3rd section -->
-  <section data-bg="dark" class=" overflow-hidden bg-black ">
-    <div class="relative">
-      <div class=" overflow-x-hidden">
-        <div class="absolute right-0  top-32 z-10">
-          <div class="dodecahedron-2">
-            <div class="pentagon-2">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-2">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-2">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-2">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-2">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-2">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-2">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-2">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-2">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-2">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-2">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pentagon-2">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-      </div>
-
-    </div>
-    <div class="max-w-screen-2xl mx-auto w-full">
-
-   
-    <div class="pt-28">
-      <div class="flex gap-12 text-[#696969] items-center justify-center lg:justify-end  ">
-        <div>
-          <p class="text-center font-light px-4 lg:px-0 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-            <span>Professionals focused on helping your brand</span><br />
-            <span>grow and move forward.</span>
-          </p>
-        </div>
-
-        <!-- Vertical left border -->
-        <div class="w-64 h-px hidden lg:inline bg-[#696969]"></div>
-      </div>
-    </div>
-
-
-    
-    <div class="between-2xl:px-40 px-8 pt-20 text-white max-w-screen-2xl mx-auto w-full ">
-      <div class="between-sm:flex  flex-col hidden  ">
-        <div class="flex-1-div between-sm:pl-24 between-sm:flex gap-4 items-center fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-          <button class="w-60 h-20 overflow-hidden  rounded-full shadow-md group">
-            <img src="./src/images/3.jpg" alt="Button Image" class="w-full h-full object-top object-cover
-              transform scale-100 group-hover:scale-90
-              transition-transform duration-500 ease-in-out rounded-full" />
-          </button>
-          <h4 class="lg:text-[74px] between-sm:text-[58px]"><span class="font-medium">Unique</span> <span
-              class="font-thin">Ideas</span></h4>
-        </div>
-        <div class="flex-2-div  between-sm:flex gap-4 items-center fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-          <h4 class="lg:text-[74px] between-sm:text-[58px]"><span class="font-medium">For Your</span> <span
-              class="font-thin">Business</span></h4>
-          <button
-            class=" cursor-pointer w-56 h-14 lg:h-16 overflow-hidden text-center rounded-full shadow-md group hover:scale-105  transition-transform duration-300 flex items-center justify-between bg-[#ff9800] hover:bg-amber-500 px-6">
-            <span
-              class="text-black uppercase text-xs tracking-wide transform transition duration-300 group-hover:scale-105">What
-              we do</span>
-            <img src="./src/images/right-arrow.svg" alt="Arrow"
-              class="w-8 h-8 p-1 bg-black rounded-full transition-transform duration-300 group-hover:scale-105" />
-          </button>
-
-        </div>
-      </div>
-
-      <div class=" between-sm:hidden text-center flex flex-col items-center justify-center gap-12 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-        <h4 class="text-[34px] ">
-          <p><span class="font-medium">Unique</span> <span class="font-thin">Ideas</span></p> <span
-            class="font-medium">For </span> <span class="font-medium">Your</span> <span
-            class="font-thin">Business</span>
-        </h4>
-         <button
-                class=" justify-center gap-8 cursor-pointer w-48 h-14 lg:h-16 overflow-hidden text-center rounded-full shadow-md group hover:scale-105  transition-transform duration-300 flex items-center  bg-[#ff9800] hover:bg-amber-500 px-6">
-                <span
-                  class="text-black uppercase  text-xs tracking-wide transform transition duration-300 group-hover:scale-105">What
-                  we do</span>
-                <img src="./src/images/right-arrow.svg" alt="Arrow"
-                  class="w-8 h-8 p-1 bg-black rounded-full transition-transform duration-300 group-hover:scale-105" />
-              </button>
-      </div>
-
-      <div class="grid between-lg:grid-cols-4 between-sm:grid-cols-2 grid-cols-1  pt-24 md:pb-24 lg:pb-0 ">
-        <!-- Box 1 -->
-<div class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group h-full min-h-[400px] relative overflow-hidden border border-zinc-900 px-8 py-8 custom-border-box">
-
-
-          <h6 class="text-white text-xl font-medium">Branding and identity design</h6>
-          <p
-            class="text-zinc-600 font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
-            Our creative agency is a team of professionals focused on helping you...
-          </p>
-          <img src="./src/images/right-arrow-1.svg" alt="Arrow"
-            class="w-8 h-8 p-1 between-lg:bg-zinc-600 bg-[#ff9800] between-lg:w-6 between-lg:h-6 between-lg:p-2 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
-        </div>
-
-
-        <!-- Box 2 -->
-<div class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group h-full min-h-[400px] relative overflow-hidden border border-zinc-900 px-8 py-8 custom-border-box">
-          <h6 class="text-white text-xl font-medium">Website Design and Development</h6>
-          <p
-            class="text-zinc-600 font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
-            Our creative agency is a team of professionals focused on helping you...
-          </p>
-          <img src="./src/images/right-arrow-1.svg" alt="Arrow"
-            class="w-8 h-8 p-1 between-lg:bg-zinc-600 bg-[#ff9800] between-lg:w-6 between-lg:h-6 between-lg:p-2 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
-        </div>
-
-        <!-- Box 3 -->
-<div class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group h-full min-h-[400px] relative overflow-hidden border border-zinc-900 px-8 py-8 custom-border-box">
-          <h6 class="text-white text-xl font-medium">Advertising and Marketing Campaigns</h6>
-          <p
-            class="text-zinc-600 font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
-            Our creative agency is a team of professionals focused on helping you...
-          </p>
-          <img src="./src/images/right-arrow-1.svg" alt="Arrow"
-            class="w-8 h-8 p-1 between-lg:bg-zinc-600 bg-[#ff9800] between-lg:w-6 between-lg:h-6 between-lg:p-2 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
-          </div>
-
-        <!-- Box 4 -->
-<div class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group h-full min-h-[400px] relative overflow-hidden border border-zinc-900 px-8 py-8 custom-border-box">
-          <h6 class="text-white text-xl font-medium">Creative Consulting and Development</h6>
-          <p
-            class="text-zinc-600 font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
-            Our creative agency is a team of professionals focused on helping you...
-          </p>
-          <img src="./src/images/right-arrow-1.svg" alt="Arrow"
-            class="w-8 h-8 p-1 between-lg:bg-zinc-600 bg-[#ff9800] between-lg:w-6 between-lg:h-6 between-lg:p-2 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
-        </div>
-      </div>
-    </div>
-     </div>
-  </section>
-
-
-
-  <!-- 4th section -->
-
-
-  <section data-bg="light" class=" bg-white overflow-hidden z-0">
-    <div class="max-w-screen-2xl w-full mx-auto relative  ">
-
-    <div class="absolute z-[1] hidden between-lg:flex right-[40%]  items-center pointer-events-none opacity-40">
-      <svg viewBox="0 0 300 1404" xmlns="http://www.w3.org/2000/svg" class="w-[300px] h-auto text-[#D0D0D0]">
-        <g fill="#D0D0D0">
-          <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
-            d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" />
-          <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
-            d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" />
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M150 0L150 1404L149 1404L149 0L150 0Z" />
-          <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
-            d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" />
-          <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" />
-          <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
-            d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" />
-          <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
-            d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" />
-        </g>
-      </svg>
-    </div>
-
-    <!-- ✅ Content stays above (z-20) -->
-    <div class="between-2xl:px-40 px-8 pt-20 pb-20 z-20 relative max-w-screen-2xl mx-auto w-full">
-      <div class="grid grid-cols-1 between-lg:grid-cols-2 lg:gap-x-12">
-        <div class="grid-1 flex flex-col gap-8">
-          <h4 class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[36px] lg:text-[68px] font-medium pt-6 lg:max-w-[200px]"><span>Meet</span> <span>Our</span>
-            <span>Team</span></h4>
-          <p class="  fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  text-[#7f7f7f] text-[14px] font-light between-lg:w-[300px] tracking-wide">
-            We are talented individuals who are passionate about bringing ideas into life.
-            with a diverse range of backgrounds and skill sets, we collaborate to produce effective solutions for our
-            clients.
-          </p>
-          <p class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#7f7f7f] text-[14px] font-light between-lg:w-[300px] tracking-wide">Together, our creative
-            team is commited to delivering impactful work that exceeds expectations.</p>
-          <button
-            class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out cursor-pointer w-48 h-14 lg:h-16 overflow-hidden text-center rounded-full shadow-md group hover:scale-105  transition-transform duration-300 flex items-center justify-between bg-[#ff9800] hover:bg-amber-500 px-6">
-            <span
-              class="text-black uppercase text-xs tracking-wide transform transition duration-300 group-hover:scale-105">Read
-              more</span>
-            <img src="./src/images/right-arrow.svg" alt="Arrow"
-              class="w-8 h-8 p-1 bg-black rounded-full transition-transform duration-300 group-hover:scale-105" />
-          </button>
-          <p class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[22px] lg:text-[28px] lg:w-[300px]"><span class="font-thin">We </span> <span
-              class="font-medium">delivering</span> <span class="font-thin">exceptional</span>
-            <span class="font-medium">results</span>
-          </p>
-        </div>
-        <div>
-
-          <div class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out grid grid-cols-1  between-coxs:grid-cols-2 pt-20  gap-6 lg:-ml-8    ">
-
-            <div class="flex flex-col gap-6 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-              <div class="group fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out relative  overflow-hidden shadow-md  ">
-                <!-- Image -->
-                <img src="./src/images/anna.jpg" alt="Anna"
-                  class="   transition-all duration-500 group-hover:opacity-60" />
-
-                <!-- Yellow border (bottom) -->
-
-
-                <!-- Overlay with details (initially hidden) -->
-                <div
-                  class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
-                  <div
-                    class="absolute bottom-0 left-0 h-[5px] bg-[#ff9800] w-0 group-hover:w-full transition-all duration-500">
-                  </div>
-                  <h4 class="text-white text-xl hover:text-[#ff9800] font-semibold mb-1">Anna Oldman</h4>
-                  <p class=" text-lg text-zinc-500 mb-4">Art Director</p>
-
-                  <div class="flex gap-3">
-                    <a href="/"><img src="./src/images/b-4.png" class="w-8 h-8" alt="Behance" /></a>
-                    <a href="/"><img src="./src/images/ball.png" class="w-8 h-8" alt="Dribbble" /></a>
-                    <a href="/"><img src="./src/images/twitt.png" class="w-8 h-8" alt="Twitter" /></a>
-                    <a href="/"><img src="./src/images/github.png" class="w-8 h-8" alt="GitHub" /></a>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group relative  overflow-hidden shadow-md  ">
-                <!-- Image -->
-                <img src="./src/images/oscar.jpg" alt="Anna"
-                  class=" w-full object-cover transition-all duration-500 group-hover:opacity-60" />
-
-                <!-- Yellow border (bottom) -->
-
-
-                <!-- Overlay with details (initially hidden) -->
-                <div
-                  class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
-                  <div
-                    class="absolute bottom-0 left-0 h-[5px] bg-[#ff9800] w-0 group-hover:w-full transition-all duration-500">
-                  </div>
-                  <h4 class="text-white hover:text-[#ff9800] text-xl font-semibold mb-1">Oscar freeman</h4>
-                  <p class=" text-lg text-zinc-600 mb-4">frontend dev</p>
-
-                  <div class="flex gap-3">
-                    <a href="/"><img src="./src/images/b-4.png" class="w-8 h-8" alt="Behance" /></a>
-                    <a href="/"><img src="./src/images/ball.png" class="w-8 h-8" alt="Dribbble" /></a>
-                    <a href="/"><img src="./src/images/twitt.png" class="w-8 h-8" alt="Twitter" /></a>
-                    <a href="/"><img src="./src/images/github.png" class="w-8 h-8" alt="GitHub" /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-6 lg:mt-16  fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  ">
-
-
-              <p class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-sm hidden xl:flex items-center  "> <span class="text-[#ff9800]"> *</span><span
-                  class="text-zinc-400">The founders of our agency </span></p>
-              <div class="group relative  overflow-hidden shadow-md fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
-                <!-- Image -->
-                <img src="./src/images/emma.jpg" alt="Anna"
-                  class=" object-cover transition-all duration-500 group-hover:opacity-60" />
-
-                <!-- Yellow border (bottom) -->
-
-
-                <!-- Overlay with details (initially hidden) -->
-                <div
-                  class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
-                  <div
-                    class="absolute bottom-0 left-0 h-[5px] bg-[#ff9800] w-0 group-hover:w-full transition-all duration-500">
-                  </div>
-                  <h4 class="text-white text-xl hover:text-[#ff9800] font-semibold mb-1">Emma newman</h4>
-                  <p class="text-zinc-600 text-lg mb-4">Founder</p>
-
-                  <div class="flex gap-3">
-                    <a href="/"><img src="./src/images/b-4.png" class="w-8 h-8" alt="Behance" /></a>
-                    <a href="/"><img src="./src/images/ball.png" class="w-8 h-8" alt="Dribbble" /></a>
-                    <a href="/"><img src="./src/images/twitt.png" class="w-8 h-8" alt="Twitter" /></a>
-                    <a href="/"><img src="./src/images/github.png" class="w-8 h-8" alt="GitHub" /></a>
-                  </div>
-                </div>
-              </div>
-              <div class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group relative  overflow-hidden shadow-md  ">
-                <!-- Image -->
-                <img src="./src/images/lisa.jpg" alt="Anna"
-                  class=" object-cover transition-all duration-500 group-hover:opacity-60" />
-
-                <!-- Yellow border (bottom) -->
-
-
-                <!-- Overlay with details (initially hidden) -->
-                <div
-                  class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
-                  <div
-                    class="absolute bottom-0 left-0 h-[5px] bg-[#ff9800] w-0 group-hover:w-full transition-all duration-500">
-                  </div>
-                  <h4 class="text-white hover:text-[#ff9800] text-xl font-semibold mb-1">Lisa trueman</h4>
-                  <p class="text-zinc-600 text-lg mb-4">UI/UX Designer</p>
-
-                  <div class="flex gap-3">
-                    <a href="/"><img src="./src/images/b-4.png" class="w-8 h-8" alt="Behance" /></a>
-                    <a href="/"><img src="./src/images/ball.png" class="w-8 h-8" alt="Dribbble" /></a>
-                    <a href="/"><img src="./src/images/twitt.png" class="w-8 h-8" alt="Twitter" /></a>
-                    <a href="/"><img src="./src/images/github.png" class="w-8 h-8" alt="GitHub" /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- 5th section -->
-
-  <section data-bg="light" class="overflow-hidden bg-[#f2f2f2] ">
-<div class="pt-28 max-w-screen-2xl w-full mx-auto">
-      <div class="flex gap-8 text-[#696969] items-start justify-center   lg:justify-end  ">
-        <div>
-          <p class="text-center font-light px-6 lg:px-0 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
-            <span>Customer reviews are a valuable source</span><br />
-            <span>of information for both business and consumers. </span>
-          </p>
-        </div>
-
-        <!-- Vertical left border -->
-        <div class="w-64 h-px hidden lg:inline bg-[#696969]"></div>
-      </div>
-    </div>
-
-    <div class="pt-24 between-2xl:px-40 px-8  ">
-    <p class="lg:text-[68px] text-center text-[36px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out      "><span class="font-medium"> Customer</span>  <br class="hidden"><span class="font-thin">Voices</span>
-    <span class="font-thin">:</span> <br class="hidden lg:inline"> <span class="font-medium">Hear What</span>
-    <span class="font-thin">They Say!</span>
-    </p>
-<!-- Thumbnails parent -->
-<div id="imageContainer"
-     class=" fade-up opacity-0 translate-y-10  transition-all duration-700 ease-in-out  items-center justify-center  min-[375px]:px-6 min-[425px]:px-4 pt-12
-        grid       
-            gap-y-0 gap-x-0
-       grid-cols-2 min-[375px]:gap-5  
-        min-[425px]:grid-cols-4  
-        min-[690px]:flex     
-        min-[690px]:flex-nowrap
-        mx-auto
-     ">
-</div>
-
-
-    <!-- Centered Quote Icon (desktop only) -->
-    <div class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:flex items-center justify-center hidden ">
-      <img class="w-10 h-10" src="./src/images/double-quotes.png" alt="Quote Icon" />
-    </div>
-
-    <!-- Navigation + Description -->
-    <div class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out flex items-center justify-between">
-      <!-- Previous Button -->
-      <button id="prevBtn"
-        class="w-36 h-36 rounded-full fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
-        <img src="./src/images/black.svg" alt="Previous" class="w-8 h-8 p-1 bg-[#e6e6e6] rounded-full" />
-      </button>
-
-      <!-- Quote Icon (mobile only) -->
-      <img class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out w-10 h-10 lg:hidden" src="./src/images/double-quotes.png" alt="Quote Icon" />
-
-      <!-- Description -->
-      <div id="descContainer"
-        class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out pt-8 text-center text-zinc-500 hidden lg:inline  lg:text-lg font-light ">
-      </div>
-
-      <!-- Next Button -->
-      <button id="nextBtn"
-        class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out w-36 h-36 rounded-full rotate-180 ">
-        <img src="./src/images/black.svg" alt="Next" class="w-8 h-8 p-1 bg-[#e6e6e6] rounded-full" />
-      </button>
-    </div>
-
-    <!-- Mobile Description (duplicate for mobile only) -->
-     <div id="descContainerMobile"
-        class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  pt-8 text-center text-zinc-500 lg:hidden    lg:text-lg font-light ">
-      </div>
-  
-
-    <!-- Swiper Carousel -->
-    <div class="w-full relative fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
-      <div class="swiper default-carousel fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-        <div class="swiper-wrapper fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-          <!-- Logos -->
-          <!-- You can loop these using JS if needed -->
-          <div class="swiper-slide"><div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-1.svg" alt="Logo 1" /></div></div>
-          <div class="swiper-slide"><div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-2.svg" alt="Logo 2" /></div></div>
-          <!-- Repeat if needed -->
-           <div class="swiper-slide"><div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-1.svg" alt="Logo 1" /></div></div>
-          <div class="swiper-slide"><div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-2.svg" alt="Logo 2" /></div></div>
-  <div class="swiper-slide"><div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-1.svg" alt="Logo 1" /></div></div>
-          <div class="swiper-slide"><div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-2.svg" alt="Logo 2" /></div></div>
-  <div class="swiper-slide"><div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-1.svg" alt="Logo 1" /></div></div>
-          <div class="swiper-slide"><div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-2.svg" alt="Logo 2" /></div></div>
-  <div class="swiper-slide"><div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-1.svg" alt="Logo 1" /></div></div>
-          <div class="swiper-slide"><div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-2.svg" alt="Logo 2" /></div></div>
-  
-    </div>
-  </section>
-<!-- 6th section -->
-<section data-bg="light" class=" overflow-hidden  bg-white">
-<div class="pt-24 between-2xl:px-40 py-20 px-8 max-w-screen-2xl mx-auto w-full ">
-<div class="flex flex-col between-lg:flex-row  items-start lg:items-center justify-between pb-16">
-   <h6 class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:text-[42px] font-medium pb-8 lg:pb-0 text-[30px]">Popular Publications:</h6>
-  <div class="flex items-center gap-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-    <p class="uppercase text-xs font-medium fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">view all</p>
-      <button class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
-
-        <img src="./src/images/black.svg" class="rotate-180" alt="">
-      </button>
-  </div>
-</div>
-
-<div class="flex flex-col between-lg:flex-row items-center w-full justify-center gap-6">
-  <div class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out div-1 flex flex-col gap-8 w-full max-w-[600px] md:w-full h-full">
-<div class="group overflow-hidden fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
-      <img src="./src/images/design-1.jpg" class="  w-full h-auto transform transition-transform duration-500 group-hover:scale-105 " alt="design">
-
-</div>  
-   <p class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out flex gap-2 text-xs pt-8 text-[#7f7f7f]"><span class="uppercase text-[#ff9800] tracking-widest">technology</span>
-      <span class="uppercase tracking-widest">may 24 2023</span>
-     </p>
-       <p class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:text-[28px] text-[22px] text-wrap font-medium lg:w-[400px]">How to Become a Graphic Designer in 10 Simple Steps</p>
-       <p class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#7f7f7f] lg:w-[455px] font-light">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita placeat explicabo esse veniam ipsam quibusdam libero...
-       </p>
-
-       <div class="flex items-center gap-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-    <p class="uppercase text-xs font-medium tracking-widest fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">read more</p>
-      <button class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
-        <img src="./src/images/black.svg" class="rotate-180" alt="">
-      </button>
-  </div>
-
-  </div>
-  <div class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out div-2 flex flex-col w-full md:w-full max-w-[600px] gap-8">
-<div class="group overflow-hidden fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-      <img src="./src/images/design-2.jpg" class=" w-full h-auto transform transition-transform duration-500 group-hover:scale-105" alt="design">
-
-</div> 
-    <p class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out flex pt-8 gap-2 text-xs text-[#7f7f7f]"><span class="uppercase text-[#ff9800] tracking-widest">technology</span>
-      <span class="uppercase tracking-widest">may 24 2023</span>
-     </p>
-       <p class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:text-[28px] text-[22px] font-medium lg:w-[400px]">16 Best Graphic Design Online and Offline Courses</p>
-       <p class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  text-[#7f7f7f] lg:w-[455px] font-light">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita placeat explicabo esse veniam ipsam quibusdam libero...
-       </p>
-
-       <div class="flex items-center gap-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
-    <p class="uppercase text-xs font-medium tracking-widest">read more</p>
-      <button class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
-
-        <img src="./src/images/black.svg" class="rotate-180" alt="">
-      </button>
-  </div>
-
-  </div>
-
-</div>
-</div>
-</section>
-
-
-<!-- section-7 -->
-<footer data-bg="dark" class="relative overflow-hidden bg-black fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-<div class="between-2xl:p-26 py-16 px-6 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-  <div class="grid grid-cols-1 between-sm:grid-cols-[33%_30%_30%] gap-x-12">
-    <div class="grid-1 order-1 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out "> 
-
-      <div class="flex flex-col  gap-6 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-
-      
-      <h6 class="text-[42px] text-white fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">Ashely.</h6>
-<p class="font-light text-[#666666] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">Subscribe our newsletter:</p>
-<div class="flex items-center justify-between rounded-full bg-[#1a1a1a] lg:py-6 py-4 px-6 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
- <input type="text" placeholder="ENTER OUR EMAIL" class="text-[#c1c1c1] text-xs tracking-widest">
-<button>
-  <img src="./src/images/right-arrow-1.svg" alt="Arrow"
-            class="  rounded-full transition-all p-1 duration-500 group-hover:scale-105 bg-[#ff9800] w-8 h-8 hover:scale-125" />
 </button>
 
-</div>
+
+
+
+                    <button
+                      class=" justify-center gap-8 cursor-pointer w-38 h-12 lg:h-16 overflow-hidden text-center rounded-full shadow-md group hover:scale-105  transition-transform duration-300 flex items-center  bg-transparent ">
+                      <span
+                        class="text-white uppercase  text-[10px] tracking-wide transform transition duration-300 group-hover:scale-105">What
+                        we do</span>
+                      <img src="./src/images/down-arrow.svg" alt="Arrow"
+                        class="w-8 h-8 p-1 bg-zinc-700 -rotate-90 rounded-full transition-transform duration-300 group-hover:scale-105" />
+                    </button>
+                  </div>
+
+                  <div class="relative  hidden group   mr-80 mb-16 lg:flex items-center justify-center ">
+                    <!-- Spinning circular text -->
+                    <svg viewBox="0 0 300 300" class="absolute   animate-spin-slow" fill="none">
+                      <defs>
+                        <path id="circlePath" d="M100 100 m-70 0 a70 70 0 1 1 140 0 a70 70 0 1 1 -140 0" />
+                      </defs>
+
+                      <text class=" circle-text  text-[15px]  tracking-widest uppercase" textLength="1000">
+                        <textPath xlink:href="#circlePath" startOffset="0">
+                          - scroll down – scroll down – scroll down – scroll down –
+                        </textPath>
+                      </text>
+                    </svg>
+
+                    <!-- Center arrow button (now hard‑centered) -->
+                    <button
+                      class="absolute inset-0 m-auto    z-10 group w-20 h-20 flex items-center justify-center rounded-full bg-[#ff9800] transition-colors  mr-0 duration-200 hover:bg-amber-500">
+                      <!-- rotate-180 flips “down” arrow so it points up -->
+                      <span
+                        class="bg-black p-1 rounded-full transition-transform duration-300 ease-in-out group-hover:scale-125">
+                        <img src="./src/images/left-arrow.svg" alt="up arrow"
+                          class="w-8 h-8  -rotate-90  transition-transform duration-400 ease-in-out group-hover:scale-125" />
+                      </span>
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ⭕️ wrapper ------------------------------------------------------------>
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class=" div-0 overflow-hidden   z-0   w-full  bg-black">
+          <div id="main-content" class="text-white">
+            <div class="shadow"></div>
+            <div class="dodecahedron" id="dodecahedron">
+              <div class="pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+
+
+        <div class=" div-1 overflow-hidden z-0     w-full   ">
+          <div id="main-content" class="text-white">
+            <div class="shadow"></div>
+            <div class="dodecahedron-4 absolute top-10 left-0 hidden custom:block" id="dodecahedron-4">
+              <div class="pentagon-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class=" div-2 overflow-hidden  z-0   w-full   bg-black">
+          <div id="main-content" class="text-white">
+            <div class="shadow"></div>
+            <div class="dodecahedron-5 absolute bottom-0 left-0 hidden custom:block" id="dodecahedron-5">
+              <div class="pentagon-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pentagon-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      </section>
     </div>
 
 
-    <div class="between-sm:flex hidden flex-col gap-12 pt-36 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
- <div class="img-div flex fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
- <img src="./src/images/b-4.png" class="w-12 h-12 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out bg-black" alt="" />
-            <img src="./src/images/ball.png" class="w-12 h-12 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out" alt="" />
-            <img src="./src/images/twitt.png" class="w-12 h-12 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out border-2 border-black" alt="" />
-            <img src="./src/images/github.png" class="w-10 h-10 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out" alt="" />
-         
- </div>
- <div>
-  <p class=' fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out font-light text-[#666666]'> &copy;Copyright 2023 - Mil. All Rights Reserved.</p>
- </div>
-    </div>
-    </div>
-    <div class="  grid-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out order-2 between-md:pl-44 between-sm:pl-12 pt-12 between-sm:pt-0 md:pt-0  " >
-     
-      <div>
-        <ul class="flex flex-col gap-4 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-          <li class="font-medium text-[#ff9800] text-[22px] lg:text-[28px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out    " ><a href="/">Home</a></li>
-          <li  class="text-white  font-medium text-[22px] lg:text-[28px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  transition-transform duration-300 hover:translate-x-3 hover:scale-105 hover:text-[#ff9800]  "><a href="/">Portfolio</a></li>
-          <li class="text-white font-medium text-[22px] lg:text-[28px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  transition-transform duration-300 hover:translate-x-3 hover:scale-105 hover:text-[#ff9800]  "><a href="/">Services</a></li>
-          <li class="text-white font-medium text-[22px] lg:text-[28px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  transition-transform duration-300 hover:translate-x-3 hover:scale-105 hover:text-[#ff9800]  "><a href="/">Contact</a></li>
-          <li class="text-white font-medium text-[22px] lg:text-[28px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  transition-transform duration-300 hover:translate-x-3 hover:scale-105 hover:text-[#ff9800]  "><a href="/">Blog</a></li>
+    <!-- second section -->
 
 
-        </ul>
+
+
+    <section data-bg="light" class=" overflow-hidden   bg-white ">
+
+      <div class="relative">
+
+
+        <!-- ✅ SVG moved behind using z-[1] and proper placement -->
+        <div class="absolute z-[1] hidden mad:flex mad:right-[25%] md:right-[35%] top-0  items-center pointer-events-none opacity-40">
+          <svg viewBox="0 0 300 1404" xmlns="http://www.w3.org/2000/svg" class="w-[300px] h-auto text-[#D0D0D0]">
+            <g fill="#D0D0D0">
+              <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+                d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" />
+              <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+                d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M150 0L150 1404L149 1404L149 0L150 0Z" />
+              <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+                d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" />
+              <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" />
+              <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+                d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" />
+              <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+                d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- ✅ Content stays above (z-20) -->
+        <div class="between-2xl:px-40 px-8 between-2xl:pt-40 py-20  z-20 relative max-w-screen-2xl mx-auto w-full  ">
+          <div class="grid grid-cols-1 mad:grid-cols-2 items-start justify-end">
+            <div class="grid-1 flex flex-col gap-8">
+              <h2
+                class="lg:text-[68px] text-[26px] md:text-[36px] leading-tight lg:leading-[80px]  between-sm:w-[200px] md:w-[170px] between-coxs:w-[150px]  lg:w-[350px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out   ">
+                <span class="font-medium">Discover</span>
+                <span class="font-medium">Our</span>
+                <span class="font-thin">Studio</span>
+              </h2>
+
+              <p
+                class="text-[#7f7f7f] text-xs med:text-base  font-light mad:w-[300px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  ">
+                At our studio, we are collective of talented individuals ignited by our own unwavering passion for
+                transforming ideas into reality. With a harmonious blend of diverse background and a vast of skill sets,
+                we
+                join forces to create compelling solutions for out esteemed clients.
+              </p>
+
+              <p
+                class="text-[#7f7f7f] med:text-base text-xs  font-light lg:w-[400px] mad:w-[300px]  fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+                Collaboration is at the heart of what we do. Our team thrives on the synergy that arises when unique
+                perspective converge, fostering an enviroment of boundless creativity. by harnessing our collective
+                expertise, we produce extraordinary resuults that consistently surpass expectations.
+              </p>
+
+              <div class="flex items-center  gap-4 flex-1 ">
+                <div class="flex rounded-full relative ">
+                  <img src="./src/images/emma.jpg"
+                    class="sm:w-[70px] between relative  w-[50px] h-[50px] sm:h-[70px]  object-cover object-top  rounded-full " alt="founder">
+                  <button class="bg-[#ff9800] sm:w-6 sm:h-6 w-5 h-5 rounded-full top-8 right-0 sm:-right-2 absolute text-lg ">"</button>
+                </div>
+                <p
+                  class="lg:text-lg flex-1  text-xs lg:w-[300px] pl-5 mad:pl-0  w-full fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                  <span class="font-medium">Passionately</span>
+                  <span class="font-medium">Creating</span>
+                  <span class="font-thin">Design</span>
+                  <span class="font-thin">Wonders</span>
+                  <span class="font-medium">Unleashing</span>
+                  <span class="font-thin">Boundless</span>
+                  <span class="font-thin">Creativity</span>
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="grid-2 scroll-zoom-wrapper mad:w-[300px] md:w-full h-full  mad:pl-12  mt-10 sm:mt-0 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+              <img src="./src/images/bg.jpg"   class="designer-imgss scroll-zoom-imgss"/>
+            </div>
+          </div>
+        </div>
       </div>
-       
-      <div class="between-sm:flex flex-col gap-12 pt-26 hidden fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
-<p class="text-white text-lg font-medium fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">Canada</p>
-<p class="text-[#666666] w-[200px] between-sm:w-[180px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
-  71 South Los Carneros Road,
-  California +51174 705 812
-</p>
-      </div>
+    </section>
 
-    </div>
-<div class="grid-3 order-3 between-md:pl-22 pt-12 between-sm:pt-0  fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out " >
-     
-      <div>
-        <ul class="flex flex-col gap-4 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
-          <li class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105    " ><a href="/">Privacy Policy</a></li>
-          <li  class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105   "><a href="/">Terms and conditions</a></li>
-          <li class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105   "><a href="/">Cookie Policy</a></li>
-          <li class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105  "><a href="/">Careers</a></li>
+    <!-- 3rd section -->
+    <section data-bg="dark" class=" overflow-hidden bg-black ">
+      <div class="relative">
+
+
+      </div>
+      <div class="max-w-screen-2xl mx-auto w-full">
+
+
+        <div class=" sm:pt-28 pt-18 relative ">
+          <div class="flex gap-12 text-[#696969] items-center justify-center between-coxs:justify-end  ">
+            <div>
+              <p
+                class="text-center text-xs font-light px-4 lg:px-0 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                <span>Professionals focused on helping your brand</span><br />
+                <span>grow and move forward.</span>
+              </p>
+            </div>
+
+            <!-- Vertical left border -->
+            <div class="w-64 h-px hidden mad:inline bg-[#666666]"></div>
+          </div>
           
+        </div>
 
 
-        </ul>
+
+        <div class="between-2xl:px-40 px-8 pb-20   sm:pb-0 text-white max-w-screen-2xl mx-auto w-full relative z-40">
+          <div class="between-coxs:flex  flex-col hidden   ">
+            <div
+              class="flex-1-div  between-sm:pl-24 between-coxs:flex gap-4 items-center fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+              <button class="w-60 h-20 overflow-hidden  rounded-full shadow-md group">
+                <img src="./src/images/3.jpg" alt="Button Image" class="w-full h-full object-top object-cover
+              transform scale-100 group-hover:scale-90
+              transition-transform duration-500 ease-in-out rounded-full" />
+              </button>
+              <h4 class="lg:text-[74px] between-sm:text-[58px] between-coxs:text-[40px] "><span class="font-medium">Unique</span> <span
+                  class="font-thin">Ideas</span></h4>
+            </div>
+            <div
+              class="flex-2-div  between-coxs:flex gap-8 items-center fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+              <h4 class="lg:text-[74px] between-coxs:text-[40px] between-sm:text-[58px]"><span class="font-medium">For Your</span> <span
+                  class="font-thin">Business.</span></h4>
+              <button
+  class="grid grid-cols-[50%_10%] items-center justify-center gap-4 cursor-pointer w-46 h-12 lg:h-16 overflow-hidden text-center rounded-full shadow-md group transition-all duration-300 bg-[#ff9800] hover:bg-amber-500">
+
+  <span
+    class="text-black uppercase text-[10px] tracking-wide transition-transform duration-300 ">
+    What we do
+  </span>
+
+  <!-- Arrow circle container -->
+  <div
+    class="w-8 h-8 p-1 rounded-full bg-black transition-transform duration-300 group-hover:scale-125 flex items-center justify-center">
+    <img src="./src/images/right-arrow.svg" alt="Arrow" class="w-5 h-5" />
+  </div>
+</button>
+
+            </div>
+          </div>
+          <div class=" overflow-x-hidden z-0">
+            <div class="absolute right-0  top-32 z-0">
+              <div class="dodecahedron-2">
+                <div class="pentagon-2">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="pentagon-2">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="pentagon-2">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="pentagon-2">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="pentagon-2">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="pentagon-2">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="pentagon-2">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="pentagon-2">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="pentagon-2">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="pentagon-2">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="pentagon-2">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="pentagon-2">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+          <div
+            class=" between-coxs:hidden text-center flex flex-col items-center justify-center gap-12 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+            <h4 class="text-[24px] ">
+              <p><span class="font-medium">Unique</span> <span class="font-thin">Ideas</span></p> <span
+                class="font-medium">For </span> <span class="font-medium">Your</span> <span
+                class="font-thin">Business</span>
+            </h4>
+            <button
+                      class=" justify-center gap-8 cursor-pointer w-42 h-12 lg:h-16 overflow-hidden text-center rounded-full shadow-md group hover:scale-105  transition-transform duration-300 flex items-center  bg-[#ff9800] hover:bg-amber-500 ">
+                      <span
+                        class="text-black uppercase  text-[10px] tracking-wide transform transition duration-300 group-hover:scale-105">What
+                        we do</span>
+                      <img src="./src/images/right-arrow.svg" alt="Arrow"
+                        class="w-8 h-8 p-1 bg-black rounded-full transition-transform duration-300 group-hover:scale-105" />
+                    </button>
+          </div>
+
+          <div class="grid mad:grid-cols-4 between-coxs:grid-cols-2 grid-cols-1  pt-24 pb-24 lg:pb-0 ">
+            <!-- Box 1 -->
+            <div
+              class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group h-full  min-h-[100px] relative overflow-hidden border border-zinc-900 px-8 py-8 custom-border-box">
+
+
+              <h6 class="text-white md:text-xl text-xs med:text-sm font-medium">Branding and identity design</h6>
+              <p
+                class=" text-xs text-zinc-600 font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
+                Our creative agency is a team of professionals focused on helping you ...
+              </p>
+              <img src="./src/images/right-arrow-1.svg" alt="Arrow"
+                class="w-8 h-8 p-1 between-lg:bg-zinc-600 bg-[#ff9800] between-lg:w-6 between-lg:h-6 between-lg:p-2 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
+            </div>
+
+
+            <!-- Box 2 -->
+            <div
+              class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group h-full  min-h-[100px] relative overflow-hidden border border-zinc-900 px-8 py-8 custom-border-box">
+              <h6 class="text-white med:text-sm text-xs md:text-xl font-medium">Website Design and Development</h6>
+              <p
+                class=" text-xs text-zinc-600 font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
+                Our creative agency is a team of professionals focused on helping you focused on helping you...
+              </p>
+              <img src="./src/images/right-arrow-1.svg" alt="Arrow"
+                class="w-8 h-8 p-1 between-lg:bg-zinc-600 bg-[#ff9800] between-lg:w-6 between-lg:h-6 between-lg:p-2 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
+            </div>
+
+            <!-- Box 3 -->
+            <div
+              class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group h-full md:min-h-[400px] relative overflow-hidden border border-zinc-900 px-8 py-8 custom-border-box">
+              <h6 class="text-white med:text-sm  text-xs md:text-xl font-medium">Advertising and Marketing Campaigns</h6>
+              <p
+                class=" text-sm text-zinc-600 font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
+                Our creative agency is a team of professionals focused on helping you focused on helping you...
+              </p>
+              <img src="./src/images/right-arrow-1.svg" alt="Arrow"
+                class="w-8 h-8 p-1 between-lg:bg-zinc-600 bg-[#ff9800] between-lg:w-6 between-lg:h-6 between-lg:p-2 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
+            </div>
+
+            <!-- Box 4 -->
+            <div
+              class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out group h-full md:min-h-[400px] relative overflow-hidden border border-zinc-900 px-8 py-8 custom-border-box">
+              <h6 class="text-white med:text-sm text-sm lg:text-xl font-medium">Creative Consulting and Development</h6>
+              <p
+                class="text-sm text-zinc-600 font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
+                Our creative agency is a team of professionals focused on helping you...
+              </p>
+              <img src="./src/images/right-arrow-1.svg" alt="Arrow"
+                class="w-8 h-8 p-1 between-lg:bg-zinc-600 bg-[#ff9800] between-lg:w-6 between-lg:h-6 between-lg:p-2 rounded-full transition-all duration-500 group-hover:scale-105 group-hover:bg-[#ff9800] group-hover:w-8 group-hover:h-8 hover:scale-125" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- 4th section -->
+
+
+    <section data-bg="light" class=" bg-white overflow-hidden z-0">
+      <div class="max-w-screen-2xl w-full mx-auto relative  ">
+
+        <div class="absolute z-[1] hidden between-lg:flex right-[40%]  items-center pointer-events-none opacity-40">
+          <svg viewBox="0 0 300 1404" xmlns="http://www.w3.org/2000/svg" class="w-[300px] h-auto text-[#D0D0D0]">
+            <g fill="#D0D0D0">
+              <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+                d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" />
+              <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+                d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M150 0L150 1404L149 1404L149 0L150 0Z" />
+              <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+                d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" />
+              <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" />
+              <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+                d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" />
+              <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+                d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- ✅ Content stays above (z-20) -->
+        <div class="between-2xl:px-40 px-8 md:pt-20 pb-20 z-20 relative max-w-screen-2xl mx-auto w-full">
+          <div class="grid grid-cols-1 between-lg:grid-cols-2 lg:gap-x-12">
+            <div class="grid-1 flex flex-col gap-8">
+              <h4
+                class=" fade-up opacity-0 leading-[80px] md:text-[44px] md:w-[190px] between-coxs:leading-[50px] translate-y-10 transition-all duration-700 ease-in-out text-2xl sm:text-[36px] lg:text-[68px] between-coxs:text-[32px] font-medium pt-6  lg:max-w-[200px]">
+                <span>Meet</span> <span>Our</span>
+                <span>Team</span>
+              </h4>
+              <p
+                class="  text-xs small:text-base fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  text-[#7f7f7f]  font-light between-lg:w-[300px] tracking-wide">
+                We are talented individuals who are passionate about bringing ideas into life.
+                with a diverse range of backgrounds and skill sets, we collaborate to produce effective solutions for
+                our
+                clients.
+              </p>
+              <p
+                class=" text-xs small:text-base fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#7f7f7f]  font-light between-lg:w-[300px] tracking-wide">
+                Together, our creative
+                team is commited to delivering impactful work that exceeds expectations.</p>
+            <button
+  class="grid grid-cols-[50%_10%] items-center justify-center gap-4 cursor-pointer w-46 h-12 lg:h-16 overflow-hidden text-center rounded-full shadow-md group transition-all duration-300 bg-[#ff9800] hover:bg-amber-500">
+
+  <span
+    class="text-black uppercase text-[10px] tracking-wide transition-transform duration-300 ">
+   read more
+  </span>
+
+  <!-- Arrow circle container -->
+  <div
+    class="w-8 h-8 p-1 rounded-full bg-black transition-transform duration-300 group-hover:scale-125 flex items-center justify-center">
+    <img src="./src/images/right-arrow.svg" alt="Arrow" class="w-5 h-5" />
+  </div>
+</button>
+              <p
+                class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-base lg:text-[28px] lg:w-[300px]">
+                <span class="font-thin">We </span> <span class="font-medium">delivering</span> <span
+                  class="font-thin">exceptional</span>
+                <span class="font-medium">results</span>
+              </p>
+            </div>
+            <div>
+
+              <div
+                class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out grid grid-cols-1  between-coxs:grid-cols-2 pt-20  gap-6 lg:-ml-8    ">
+
+                <div
+                  class="flex flex-col gap-6 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                  
+                  <!-- 1st img div -->
+                  <div
+                    class="group  w-full h-auto fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out relative  overflow-hidden shadow-md  ">
+                    <!-- Image -->
+                    <img src="./src/images/anna.jpg" class="w-full h-full" alt="Anna"
+                      class="   transition-all duration-500 group-hover:opacity-60" />
+
+                    <!-- Yellow border (bottom) -->
+
+
+                    <!-- Overlay with details (initially hidden) -->
+                    <div
+                      class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+                      <div
+                        class="absolute bottom-0 left-0 h-[5px] bg-[#ff9800] w-0 group-hover:w-full transition-all duration-500">
+                      </div>
+                      <h4 class="text-white text-sm hover:text-[#ff9800] font-semibold mb-1">Anna Oldman</h4>
+                      <p class=" text-sm text-zinc-500 mb-4">Art Director</p>
+
+                      <div class="flex gap-3">
+                        <a href="/"><img src="./src/images/b-4.png" class="w-8 h-8" alt="Behance" /></a>
+                        <a href="/"><img src="./src/images/ball.png" class="w-8 h-8" alt="Dribbble" /></a>
+                        <a href="/"><img src="./src/images/twitt.png" class="w-8 h-8" alt="Twitter" /></a>
+                        <a href="/"><img src="./src/images/github.png" class="w-8 h-8" alt="GitHub" /></a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div
+                    class=" fade-up w-full h-auto opacity-0 translate-y-10 transition-all duration-700 ease-in-out group relative  overflow-hidden shadow-md  ">
+                    <!-- Image -->
+                    <img src="./src/images/oscar.jpg" class="w-full h-full" alt="Anna"
+                      class=" w-full object-cover transition-all duration-500 group-hover:opacity-60" />
+
+                    <!-- Yellow border (bottom) -->
+
+
+                    <!-- Overlay with details (initially hidden) -->
+                    <div
+                      class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+                      <div
+                        class="absolute bottom-0 left-0 h-[5px] bg-[#ff9800] w-0 group-hover:w-full transition-all duration-500">
+                      </div>
+                      <h4 class="text-white hover:text-[#ff9800] text-sm font-semibold mb-1">Oscar freeman</h4>
+                      <p class=" text-sm text-zinc-600 mb-4">frontend dev</p>
+
+                      <div class="flex gap-3">
+                        <a href="/"><img src="./src/images/b-4.png" class="w-8 h-8" alt="Behance" /></a>
+                        <a href="/"><img src="./src/images/ball.png" class="w-8 h-8" alt="Dribbble" /></a>
+                        <a href="/"><img src="./src/images/twitt.png" class="w-8 h-8" alt="Twitter" /></a>
+                        <a href="/"><img src="./src/images/github.png" class="w-8 h-8" alt="GitHub" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-6 lg:mt-16  fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  ">
+
+
+                  <p
+                    class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-sm hidden xl:flex items-center  ">
+                    <span class="text-[#ff9800]"> *</span><span class="text-zinc-400">The founders of our agency </span>
+                  </p>
+                  <div
+                    class="group w-full h-auto fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out relative  overflow-hidden shadow-md  ">
+                    <!-- Image -->
+                    <img src="./src/images/emma.jpg" class="w-full h-full" alt="Anna"
+                      class="   transition-all duration-500 group-hover:opacity-60" />
+
+                    <!-- Yellow border (bottom) -->
+
+
+                    <!-- Overlay with details (initially hidden) -->
+                    <div
+                      class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+                      <div
+                        class="absolute bottom-0 left-0 h-[5px] bg-[#ff9800] w-0 group-hover:w-full transition-all duration-500">
+                      </div>
+                      <h4 class="text-white text-sm hover:text-[#ff9800] font-semibold mb-1">Emma Newman</h4>
+                      <p class=" text-sm text-zinc-500 mb-4">Founder</p>
+
+                      <div class="flex gap-3">
+                        <a href="/"><img src="./src/images/b-4.png" class="w-8 h-8" alt="Behance" /></a>
+                        <a href="/"><img src="./src/images/ball.png" class="w-8 h-8" alt="Dribbble" /></a>
+                        <a href="/"><img src="./src/images/twitt.png" class="w-8 h-8" alt="Twitter" /></a>
+                        <a href="/"><img src="./src/images/github.png" class="w-8 h-8" alt="GitHub" /></a>
+                      </div>
+                    </div>
+                  </div>
+                   <div
+                    class="group w-full h-auto fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out relative  overflow-hidden shadow-md  ">
+                    <!-- Image -->
+                    <img src="./src/images/lisa.jpg" class="w-full h-full" alt="Anna"
+                      class="   transition-all duration-500 group-hover:opacity-60" />
+
+                    <!-- Yellow border (bottom) -->
+
+
+                    <!-- Overlay with details (initially hidden) -->
+                    <div
+                      class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+                      <div
+                        class="absolute bottom-0 left-0 h-[5px] bg-[#ff9800] w-0 group-hover:w-full transition-all duration-500">
+                      </div>
+                      <h4 class="text-white text-sm hover:text-[#ff9800] font-semibold mb-1">Lisa trueman</h4>
+                      <p class="  text-sm text-zinc-500 mb-4">UI/Ux Designer</p>
+
+                      <div class="flex gap-3">
+                        <a href="/"><img src="./src/images/b-4.png" class="w-8 h-8" alt="Behance" /></a>
+                        <a href="/"><img src="./src/images/ball.png" class="w-8 h-8" alt="Dribbble" /></a>
+                        <a href="/"><img src="./src/images/twitt.png" class="w-8 h-8" alt="Twitter" /></a>
+                        <a href="/"><img src="./src/images/github.png" class="w-8 h-8" alt="GitHub" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5th section -->
+
+    <section data-bg="light" class="overflow-hidden bg-[#f2f2f2] ">
+      <div class="lg:pt-28 pt-16 max-w-screen-2xl w-full mx-auto">
+        <div class="flex gap-8 text-[#696969] items-start justify-center   between-coxs:justify-end  ">
+          <div>
+            <p
+              class="text-center text-xs font-light px-6 lg:px-0 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+              <span>Customer reviews are a valuable source</span><br />
+              <span>of information for both business and consumers. </span>
+            </p>
+          </div>
+
+          <!-- Vertical left border -->
+          <div class="w-64 h-px hidden lg:inline bg-[#d9d9d9]"></div>
+        </div>
       </div>
 
-      <div class="flex flex-col lg:gap-12 gap-4 between-sm:hidden pt-12 between-sm:pt-56 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
-<p class="text-white text-lg font-medium fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">Canada</p>
-<p class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] w-[250px]  between-sm:w-[200px] text-[15px] font-light ">
-  71 South Los Carneros Road, 
-  California +51 174 705 812
-</p>
+      <div class="pt-24 between-2xl:px-40 px-8  ">
+        <p
+          class="lg:text-[68px]  text-center text-[24px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  between-coxs:text-[40px]      ">
+          <span class="font-medium"> Customer</span> <br class="hidden"><span class="font-thin">Voices</span>
+          <span class="font-thin">:</span> <br class="hidden lg:inline"> <span class="font-medium">Hear What</span>
+          <span class="font-thin">They Say!</span>
+        </p>
+        <!-- Thumbnails parent -->
+        <div id="imageContainer" class=" fade-up opacity-0 translate-y-10  transition-all duration-700 ease-in-out  items-center justify-center place-items-center  min-[375px]:px-6 min-[425px]:px-4 pt-12
+        flex flex-wrap
+     ">
+        </div>
+
+
+        <!-- Centered Quote Icon (desktop only) -->
+        <div
+          class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:flex items-center justify-center hidden ">
+          <img class="w-10 h-10" src="./src/images/double-quotes.png" alt="Quote Icon" />
+        </div>
+
+        <!-- Navigation + Description -->
+        <div
+          class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out flex items-center justify-between">
+          <!-- Previous Button -->
+          <button id="prevBtn"
+            class="w-36 h-36 rounded-full fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+            <img src="./src/images/black.svg" alt="Previous" class="w-8 h-8 p-1 bg-[#e6e6e6] rounded-full" />
+          </button>
+
+          <!-- Quote Icon (mobile only) -->
+          <img class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out w-10 h-10 lg:hidden"
+            src="./src/images/double-quotes.png" alt="Quote Icon" />
+
+          <!-- Description -->
+          <div id="descContainer"
+            class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out pt-8 text-center text-zinc-500 hidden lg:inline  lg:text-lg font-light ">
+          </div>
+
+          <!-- Next Button -->
+          <button id="nextBtn"
+            class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out w-36 h-36 rounded-full rotate-180 ">
+            <img src="./src/images/black.svg" alt="Next" class="w-8 h-8 p-1 bg-[#e6e6e6] rounded-full" />
+          </button>
+        </div>
+
+        <!-- Mobile Description (duplicate for mobile only) -->
+        <div id="descContainerMobile"
+          class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  pt-8 between-coxs:pt-0  text-center text-zinc-500 lg:hidden    lg:text-lg font-light ">
+        </div>
+
+
+        <!-- Swiper Carousel -->
+        <div class="w-full relative  ">
+          <div class="swiper default-carousel ">
+            <div class="swiper-wrapper ">
+              <!-- Logos -->
+              <!-- You can loop these using JS if needed -->
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-1.svg"
+                    alt="Logo 1" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-2.svg"
+                    alt="Logo 2" /></div>
+              </div>
+              <!-- Repeat if needed -->
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-1.svg"
+                    alt="Logo 1" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-2.svg"
+                    alt="Logo 2" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-1.svg"
+                    alt="Logo 1" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-2.svg"
+                    alt="Logo 2" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-1.svg"
+                    alt="Logo 1" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-2.svg"
+                    alt="Logo 2" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-1.svg"
+                    alt="Logo 1" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-36 flex items-center justify-center"><img src="./src/images/logo-2.svg"
+                    alt="Logo 2" /></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- 6th section -->
+    <section data-bg="light" class=" overflow-hidden  bg-white">
+      <div class="lg:pt-24 pt-16 between-2xl:px-40 py-20 px-8 max-w-screen-2xl mx-auto w-full ">
+        <div class="flex flex-col between-lg:flex-row  items-start lg:items-center justify-between pb-16">
+          <h6
+            class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:text-[42px] font-medium pb-8 lg:pb-0 text-[24px] between-coxs:text-[28px]">
+            Popular Publications:</h6>
+          <div class="flex items-center gap-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+            <p
+              class="uppercase text-[10px] font-medium fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+              view all</p>
+            <button
+              class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
+
+              <img src="./src/images/black.svg" class="rotate-180" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-col between-lg:flex-row items-center w-full justify-center gap-6">
+          <div
+            class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out div-1 flex flex-col gap-8 w-full max-w-[600px] md:w-full h-full">
+            <div
+              class="group overflow-hidden fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+              <img src="./src/images/design-1.jpg"
+                class="  w-full h-auto transform transition-transform duration-500 group-hover:scale-105 " alt="design">
+
+            </div>
+            <p
+              class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out flex gap-2 text-xs pt-8 text-[#7f7f7f]">
+              <span class="uppercase text-[#ff9800] text-[10px] tracking-widest">technology</span>
+              <span class="uppercase text-[10px] tracking-widest">may 24 2023</span>
+            </p>
+            <p
+              class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:text-[28px] text-base between-coxs:text-lg text-wrap font-medium lg:w-[400px]">
+              How to Become a Graphic Designer in 10 Simple Steps</p>
+            <p
+              class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#7f7f7f] text-xs lg:w-[455px] font-light">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita placeat explicabo esse veniam ipsam
+              quibusdam libero...
+            </p>
+
+            <div
+              class="flex items-center gap-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+              <p
+                class="uppercase text-[10px] font-medium tracking-widest fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                read more</p>
+              <button
+                class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
+                <img src="./src/images/black.svg" class="rotate-180" alt="">
+              </button>
+            </div>
+
+          </div>
+          <div
+            class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out div-2 flex flex-col w-full md:w-full max-w-[600px] gap-8">
+            <div class="group overflow-hidden fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+              <img src="./src/images/design-2.jpg"
+                class=" w-full h-auto transform transition-transform duration-500 group-hover:scale-105" alt="design">
+
+            </div>
+            <p
+              class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out flex pt-8 gap-2 text-xs text-[#7f7f7f]">
+              <span class="uppercase text-[10px] text-[#ff9800] tracking-widest">technology</span>
+              <span class="uppercase tracking-widest text-[10px]">may 24 2023</span>
+            </p>
+            <p
+              class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:text-[28px] between-coxs:text-lg text-base font-medium lg:w-[400px]">
+              16 Best Graphic Design Online and Offline Courses</p>
+            <p
+              class="fade-up text-xs opacity-0 translate-y-10 transition-all duration-700 ease-in-out  text-[#7f7f7f] lg:w-[455px] font-light">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita placeat explicabo esse veniam ipsam
+              quibusdam libero...
+            </p>
+
+            <div
+              class="flex items-center gap-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+              <p class="uppercase text-[10px] font-medium tracking-widest">read more</p>
+              <button
+                class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
+
+                <img src="./src/images/black.svg" class="rotate-180" alt="">
+              </button>
+            </div>
+
+          </div>
+
+        </div>
       </div>
-       
-      <div class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out flex flex-col lg:gap-12 gap-4 pt-12 between-sm:pt-56 ">
-<p class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-white text-lg font-medium">Germany</p>
-<p class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  text-[#666666] w-[250px] between-sm:w-[150px] text-[15px] font-light  ">
-  Leehove 40, 2678 MC De Lier,
-  Netherlands +31174 705 811
-</p>
-      </div>
+    </section>
 
 
+    <!-- section-7 -->
+    <footer data-bg="dark"
+      class=" overflow-hidden bg-black fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out z-0">
+      <div
+        class=" relative between-2xl:p-26 py-16 px-6 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+        <div class="grid grid-cols-1 md:grid-cols-[33%_30%_30%]  gap-x-12">
+          <div class="grid-1 order-1 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
 
-       <div class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  between-sm:hidden flex flex-col lg:gap-12 gap-4 pt-12 lg:pt-36">
- <div class="img-div flex fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
- <img src="./src/images/b-4.png " class="w-12 h-12 bg-black fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out" alt="" />
-            <img src="./src/images/ball.png" class="w-12 h-12 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out" alt="" />
-            <img src="./src/images/twitt.png" class="w-12 h-12 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out border-2 border-black" alt="" />
-            <img src="./src/images/github.png" class="w-10 h-10 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out " alt="" />
-         
- </div>
- <div>
-  <p class=' fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-outfont-light text-[#666666]'> &copy;Copyright 2023 - Mil. All Rights Reserved.</p>
- </div>
-    </div>
+            <div class="flex flex-col  gap-6 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
 
-    </div>
+
+              <h6
+                class="lg:text-[42px] text-[36px] text-[#e6e6e6] font-medium fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                Ashely.</h6>
+              <p
+                class="font-light text-sm text-[#666666] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                Subscribe our newsletter:</p>
+                                <div
+  class="grid grid-cols-[70%_15%] items-center justify-between gap-4 cursor-pointer md:w-64 h-16 lg:h-16 overflow-hidden text-center rounded-full shadow-md group transition-all duration-300 bg-[#1a1a1a] hover:bg-white">
+
+  <!-- Input field -->
+  <input
+    type="email"
+    placeholder="Enter your email"
+    class="bg-transparent  text-[#808080] text-[10px] uppercase tracking-wide md:pl-12 px-12 md:px-0 outline-none border-none w-full" />
+
+  <!-- Arrow circle container -->
+  <div
+    class="w-8 h-8 p-1 rounded-full bg-black transition-transform duration-300  flex items-center justify-end">
+    <img src="./src/images/right-arrow.svg" alt="Arrow" class="w-5 h-5" />
+  </div>
 </div>
-</footer>
-    </div>
+
+
+            </div>
+
+
+            <div
+              class="md:flex hidden flex-col gap-8 pt-40 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+              <div class="img-div flex fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+                <img src="./src/images/b-4.png"
+                  class="md:w-12 md:h-12 w-8 h-8 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out bg-black"
+                  alt="" />
+                <img src="./src/images/ball.png"
+                  class="md:w-12 md:h-12 w-8 h-8 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out" alt="" />
+                <img src="./src/images/twitt.png"
+                  class="md:w-12 md:h-12 w-8 h-8 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out border-2 border-black"
+                  alt="" />
+                <img src="./src/images/github.png"
+                  class="md:w-12 md:h-12 w-8 h-8 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out" alt="" />
+
+              </div>
+              <div>
+                <p
+                  class=' fade-up opacity-0 text-xs translate-y-10 transition-all duration-700 ease-in-out font-light text-[#666666]'>
+                  &copy;Copyright 2023 - Mil. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="  grid-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out order-2 between-md:pl-44   pt-12 between-sm:pt-0 md:pt-0  ">
+
+            <div>
+              <ul class="flex flex-col gap-4 pt-5 md:pt-0 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                <li
+                  class="font-medium text-[#ff9800] text-base sm:text-[22px] lg:text-[28px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out    ">
+                  <a href="/">Home</a></li>
+                <li
+                  class="text-white  font-medium text-base sm:text-[22px] lg:text-[28px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  transition-transform duration-300 hover:translate-x-3 hover:scale-105 hover:text-[#ff9800]  ">
+                  <a href="/">Portfolio</a></li>
+                <li
+                  class="text-white font-medium text-base sm:text-[22px] lg:text-[28px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  transition-transform duration-300 hover:translate-x-3 hover:scale-105 hover:text-[#ff9800]  ">
+                  <a href="/">Services</a></li>
+                <li
+                  class="text-white font-medium text-base sm:text-[22px] lg:text-[28px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  transition-transform duration-300 hover:translate-x-3 hover:scale-105 hover:text-[#ff9800]  ">
+                  <a href="/">Contact</a></li>
+                <li
+                  class="text-white font-medium text-base sm:text-[22px] lg:text-[28px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  transition-transform duration-300 hover:translate-x-3 hover:scale-105 hover:text-[#ff9800]  ">
+                  <a href="/">Blog</a></li>
+
+
+              </ul>
+            </div>
+
+            <div
+              class="md:flex flex-col gap-6 pt-26 hidden fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+              <p
+                class="text-white text-xs  md:text-base sm:text-[22px] font-medium fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                Canada</p>
+              <p
+                class="text-[#666666] text-xs w-[200px] between-sm:w-[180px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+                71 South Los Carneros Road,
+                California +51174 705 812
+              </p>
+            </div>
+
+          </div>
+          <div
+            class="grid-3 order-3 between-md:pl-22 pt-12 between-sm:pt-0  fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+
+            <div>
+              <ul class="flex flex-col gap-4 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                <li
+                  class=" fade-up text-xs opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105    ">
+                  <a href="/">Privacy Policy</a></li>
+                <li
+                  class=" fade-up text-xs opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105   ">
+                  <a href="/">Terms and conditions</a></li>
+                <li
+                  class=" fade-up text-xs opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105   ">
+                  <a href="/">Cookie Policy</a></li>
+                <li
+                  class=" fade-up text-xs opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] font-light hover:text-white  transition-transform duration-300 hover:translate-x-3 hover:scale-105  ">
+                  <a href="/">Careers</a></li>
+
+
+
+              </ul>
+            </div>
+
+            <div
+              class="flex flex-col lg:gap-12 gap-4 between-coxs:hidden pt-12 between-coxs:pt-56 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+              <p
+                class=" md:text-base text-xs sm:text-[22px]  text-white  font-medium fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+                Canada</p>
+              <p
+                class=" text-xs fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#666666] w-[250px]  between-sm:w-[200px] text-[15px] font-light ">
+                71 South Los Carneros Road,
+                California +51 174 705 812
+              </p>
+            </div>
+
+            <div
+              class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out flex flex-col lg:gap-12 gap-4 pt-12 between-coxs:pt-44 ">
+              <p
+                class=" fade-up text-xs opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-white text-lg font-medium">
+                Germany</p>
+              <p
+                class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  text-[#666666] w-[250px] between-sm:w-[150px] text-[15px] font-light  ">
+                Leehove 40, 2678 MC De Lier,
+                Netherlands +31174 705 811
+              </p>
+            </div>
+
+
+
+            <div
+              class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  md:hidden flex flex-col lg:gap-12 gap-4 pt-12 lg:pt-36">
+              <div class="img-div flex fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+                <img src="./src/images/b-4.png "
+                  class="w-12 h-12 bg-black fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out"
+                  alt="" />
+                <img src="./src/images/ball.png"
+                  class="w-12 h-12 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out" alt="" />
+                <img src="./src/images/twitt.png"
+                  class="w-12 h-12 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out border-2 border-black"
+                  alt="" />
+                <img src="./src/images/github.png"
+                  class="w-10 h-10 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out " alt="" />
+
+              </div>
+              <div>
+                <p
+                  class=' text-xs fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-outfont-light text-[#666666]'>
+                  &copy;Copyright 2023 - Mil. All Rights Reserved.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+   
+  </div>
   <script src="./script.js"></script>
 </body>
 

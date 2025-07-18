@@ -3,28 +3,37 @@
  document.addEventListener('DOMContentLoaded',function(){
 
 
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+
+    const progressBar = document.getElementById("scroll-progress-bar");
+    progressBar.style.height = scrollPercent + "%";
+  });
+
  
  const follower=document.getElementById('mouse-circle');
 
 // Show heading (default visible), then hide after 3s
 
   // Hide heading after 3s
-   setTimeout(() => {
+   /* setTimeout(() => {
     document.getElementById('pre-heading').classList.add('hidden');
     document.getElementById('pre-btn').classList.remove('hidden');
   }, 3000);
-
+ */
   // Hide yellow border, show name
-  setTimeout(() => {
+  /* setTimeout(() => {
     document.getElementById('pre-btn').classList.add('hidden');
     document.getElementById('pre-name').classList.remove('hidden');
-  }, 5000);
+  }, 5000); */
 
   // Hide name, show main content
-  setTimeout(() => {
+  /* setTimeout(() => {
     document.getElementById('pre-name').classList.add('hidden');
     document.getElementById('main-content-1').classList.remove('hidden');
-  }, 7000);
+  }, 7000); */
  
 
 document.addEventListener("mousemove", (e) => {
@@ -100,7 +109,7 @@ function renderGallery() {
     const wrap = document.createElement('div');
     wrap.dataset.index = i;
     wrap.className = `
-      w-20 h-20 rounded-full border-4 p-1 
+      w-[90px] h-[90px] rounded-full border-4 p-1  
       ${i===activeIndex? 'border-[#ff9800]' : 'border-transparent hover:border-white'}
       transition-all duration-300 cursor-pointer ${i%2?'min-[993px]:mt-12':''}`;
     wrap.innerHTML =
@@ -114,9 +123,9 @@ function renderGallery() {
   const anim = direction==='left' ? 'animate-slide-left':'animate-slide-right';
   const content = `
     <div class="max-w-2xl mx-auto text-center ${anim}">
-      <h3 class="text-2xl font-semibold text-gray-800  ">${m.name}</h3>
-      <p  class="text-sm  text-gray-500 mt-1  ">${m.designation}</p>
-      <p  class="mt-4  font-light  leading-8  ">${m.description}</p>
+      <h3 class="lg:text-2xl text-sm font-semibold text-gray-800  ">${m.name}</h3>
+      <p  class="sm:text-sm  text-xs text-gray-500 mt-1  ">${m.designation}</p>
+      <p  class="mt-4  font-light text-sm  leading-8  ">${m.description}</p>
     </div>`;
     descContainer.innerHTML=content;
     descContainerMobile.innerHTML=content
@@ -160,35 +169,24 @@ renderGallery();
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-
-  new Swiper('.default-carousel', {
-    /* — Core behaviour — */
+new Swiper('.default-carousel', {
     loop: true,
     slidesPerView: 2,
     spaceBetween: 32,
-
-    /* linear marquee‑style autoplay */
-    speed: 3500,                 // ↙︎ how fast it slides
+    speed: 3500,
     autoplay: {
-      delay: 0,                  // no pause between cycles
+      delay: 0,
       disableOnInteraction: false,
     },
-
-    /* keep drag / wheel free */
     freeMode: true,
     freeModeMomentum: false,
-
-    
-    /* responsive: 1 on mobile, 2 on ≥640 px, 4 on ≥1024 px */
     breakpoints: {
-      0:   { slidesPerView: 1 },
+      0: { slidesPerView: 1 },
       640: { slidesPerView: 2 },
-      1024:{ slidesPerView: 4 }
+      1024: { slidesPerView: 4 },
     },
   });
 
-});
 
 
 
@@ -249,25 +247,32 @@ zoomObserver.observe(zoomImage); */
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
+      const el = entry.target;
+
       if (entry.isIntersecting) {
-        entry.target.classList.add('opacity-100', 'translate-y-0');
-        entry.target.classList.remove('opacity-0', 'translate-y-10');
+        // In view: show the element
+        el.classList.add('opacity-100', 'translate-y-0');
+        el.classList.remove('opacity-0', 'translate-y-10');
       } else {
-        // Reset when it goes out of view
-        entry.target.classList.remove('opacity-100', 'translate-y-0');
-        entry.target.classList.add('opacity-0', 'translate-y-10');
+        // Out of view: reset to hidden
+        el.classList.remove('opacity-100', 'translate-y-0');
+        el.classList.add('opacity-0', 'translate-y-10');
       }
     });
   },
   { threshold: 0.1 }
 );
 
-// Observe all elements with the 'fade-up' class
-document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
+// Only add transition classes if they’re not already added
+document.querySelectorAll('.fade-up').forEach((el) => {
+  if (!el.classList.contains('transition-all')) {
+    el.classList.add('transition-all', 'duration-700', 'ease-in-out');
+  }
+  observer.observe(el);
+});
 
 
-
-
+/* below 1400 */
   const openBtn = document.getElementById('desktopMenuBtn');
   const closeBtn = document.getElementById('desktopCloseBtn');
   const overlay = document.getElementById('desktopOverlay');
@@ -295,6 +300,32 @@ document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
 
 
 
+  /* above 1400 */
+
+  const openBtnAbove = document.getElementById('desktopMenuBtnAbove');
+  const closeBtnAbove = document.getElementById('desktopCloseBtnAbove');
+  const overlayAbove = document.getElementById('desktopOverlayAbove');
+
+  openBtnAbove.addEventListener('click', () => {
+    overlayAbove.classList.remove('hidden');
+    // Allow DOM to update before adding visible state
+    requestAnimationFrame(() => {
+      overlayAbove.classList.remove('opacity-0', 'scale-95');
+      overlayAbove.classList.add('opacity-100', 'scale-100');
+    });
+  });
+
+  closeBtnAbove.addEventListener('click', () => {
+    overlayAbove.classList.remove('opacity-100', 'scale-100');
+    overlayAbove.classList.add('opacity-0', 'scale-95');
+
+    overlayAbove.addEventListener('transitionend', function handler(e) {
+      if (e.propertyName === 'opacity') {
+        overlayAbove.classList.add('hidden');
+        overlayAbove.removeEventListener('transitionend', handler);
+      }
+    });
+  });
 
 
 
