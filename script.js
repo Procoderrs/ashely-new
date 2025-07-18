@@ -352,6 +352,35 @@ document.querySelectorAll('.fade-up').forEach((el) => {
   });
 
 
+/* circle-bg-change-detect */
+const sections = document.querySelectorAll('[data-bg]');
+const circleBg = document.getElementById('circleBg');
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const bgType = entry.target.getAttribute('data-bg');
+        if (bgType === 'dark') {
+          circleBg.classList.remove('bg-[rgba(0,0,0,0.1)]');
+          circleBg.classList.add('bg-[rgba(0,0,0,0.1)]');
+        } else {
+          circleBg.classList.remove('bg-[rgba(0,0,0,0.1)]');
+          circleBg.classList.add('bg-[rgba(0,0,0,0.1)]');
+        }
+      }
+    });
+  },
+  {
+    threshold: 0,
+  }
+);
+
+sections.forEach((section) => {
+   sectionObserver.observe(section);
+});
+
+
 /* 2nd-section-img-zoom-effect */
 
 
