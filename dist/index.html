@@ -494,11 +494,11 @@
   
 
   <!-- sidebar  -->
-  <div class=" text-white header">
+  <div class="  header">
     <div class="bg-black flex items-center justify-between z-[999]">
 
 
-      <div class="fixed left-16 top-8  z-[99] mix-blend-difference  custom:hidden hidden between-2xl:inline">
+      <div class="fixed left-12 top-8  z-[99] mix-blend-difference  custom:hidden hidden between-2xl:inline">
         <h1 class="text-[42px] text-white bg-transparent   ">A.</h1>
 
 
@@ -542,8 +542,8 @@
     <div id="backToTop"
       class=" hidden xl:fixed top-[550px] -right-16 z-30 transform -rotate-90 origin-top-left  mix-blend-difference">
       <div class="flex items-center gap-5 p-4">
-        <div class="mix-blend-difference">
-          <h3 class="text-xs uppercase tracking-widest text-white z-30">
+        <div class="text-top">
+          <h3 class="text-xs uppercase tracking-widest  z-30">
             back to top
           </h3>
         </div>
@@ -558,17 +558,10 @@
 
   <!-- mobile navbar -->
 
-
-
-
-  <!-- banner   -->
-  <div class="bg-black" id="banner">
-
-    <section data-bg="dark" class="  relative bg-transparent  overflow-hidden ">
-      <!-- mobile-nav -->
+<!-- mobile-nav -->
       <!-- Top Bar Always Visible (with A. and Menu Icon) -->
       <div
-        class="fixed top-0 left-0 right-0 z-[9999] bg-black p-4 flex items-center justify-between border-b border-gray-800 between-2xl:hidden">
+        class="sticky top-0 left-0 right-0 z-[9999] bg-black p-4 flex items-center justify-between border-b border-gray-800 between-2xl:hidden">
         <h1 class="text-white text-[36px]">A.</h1>
 
         <!-- Menu Icon Button -->
@@ -587,7 +580,7 @@
 
 
         <div
-          class="fixed top-0 left-0 right-0 z-[9999] bg-black p-4 flex items-center justify-between border-b border-gray-800 between-2xl:hidden">
+          class="sticky top-0 left-0 right-0 z-[9999] bg-black p-4 flex items-center justify-between border-b border-gray-800 between-2xl:hidden">
           <h1 class="text-white text-[36px]">A.</h1>
 
           <button id="mobileCloseBtn">
@@ -663,18 +656,25 @@
       </div>
 
 
+
+  <!-- banner   -->
+  <div class="bg-black" id="banner">
+
+    <section data-bg="dark" class="  relative bg-transparent  overflow-hidden ">
+      
+
       <div class="max-w-screen-2xl w-full mx-auto">
 
 
 
         <div
-          class=" relative z-[999] between-2xl:px-40 pb-8 h-screen  min-h-screen  bg-transparent mx-auto md:top-20 between-colg:top-32 ">
+          class=" relative z-[999] between-2xl:px-32 pb-8 h-screen  min-h-screen  bg-transparent mx-auto md:top-20 between-colg:top-32 ">
 
           <div class=" between-2xl:pt-0 lg:pt-42    pt-36">
             <div
-              class=" absolute  md:bottom-32 between-2xl:bottom-62 between-md:bottom-22  between-coxs:bottom-22  med:bottom-16 px-8 flex flex-col items-start w-full  justify-center gap-8">
+              class=" absolute  md:bottom-32 between-2xl:bottom-64 between-md:bottom-22  between-coxs:bottom-22  med:bottom-16 px-8 flex flex-col items-start w-full  justify-center gap-8">
               <h2
-                class=" tracking-tighter leading-[40px] between-coxs:leading-[60px]  md:w-[550px] between-coxs:w-[400px] between-coxs:text-[48px] mad:text-[56px] mad:w-[430px]    text-white text-[28px] lg:text-[74px] md:text-[58px]">
+                class=" tracking-tighter md:tracking-normal leading-[40px] between-coxs:leading-[60px]  md:w-[550px] lg:w-[650px] between-coxs:w-[400px] between-coxs:text-[48px] mad:text-[56px] mad:w-[430px]    text-white text-[28px] lg:text-[74px] md:text-[58px]">
                 <span class="md:font-medium">Designing</span><span class=" font-thin"> a Better
                 </span> <span class="lg:leading-[100px]  ">World</span> <span class="font-thin ">Today</span>
               </h2>
@@ -1062,7 +1062,7 @@
 
       <!-- ✅ SVG moved behind using z-[1] and proper placement -->
       <div
-        class="absolute z-[1] hidden mad:flex mad:right-[25%] md:right-[35%] top-0  items-center pointer-events-none opacity-40">
+        class="absolute z-[1] hidden mad:flex mad:right-[25%] md:right-[34%] -top-6  items-center pointer-events-none opacity-40">
         <svg viewBox="0 0 300 1404" xmlns="http://www.w3.org/2000/svg" class="w-[300px] h-auto text-[#D0D0D0]">
           <g fill="#D0D0D0">
             <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
@@ -1083,8 +1083,10 @@
       </div>
 
       <!-- ✅ Content stays above (z-20) -->
-      <div class="between-2xl:px-40 px-8 between-2xl:pt-40 py-20  z-20 relative max-w-screen-2xl mx-auto w-full  ">
-        <div class="grid grid-cols-1 mad:grid-cols-2 items-start justify-end">
+      <div class="between-2xl:px-44 px-8 between-2xl:pt-40 py-20   z-20 relative max-w-screen-2xl mx-auto w-full  ">
+        <div class="grid grid-cols-1 mad:grid-cols-[58%_42%]  items-start justify-end">
+
+          <!-- left-side-grid -->
           <div class="grid-1 flex flex-col gap-8">
             <h2
               class="lg:text-[68px] text-black text-[26px] md:text-[36px] leading-tight lg:leading-[80px]  between-sm:w-[200px] md:w-[170px] between-coxs:w-[150px]  lg:w-[350px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out   ">
@@ -1094,7 +1096,7 @@
             </h2>
 
             <p
-              class="text-[#7f7f7f] text-xs med:text-base  font-light mad:w-[300px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  ">
+              class="text-[#7f7f7f] text-xs med:text-base  font-light mad:w-[360px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  ">
               At our studio, we are collective of talented individuals ignited by our own unwavering passion for
               transforming ideas into reality. With a harmonious blend of diverse background and a vast of skill sets,
               we
@@ -1102,22 +1104,22 @@
             </p>
 
             <p
-              class="text-[#7f7f7f] med:text-base text-xs  font-light lg:w-[400px] mad:w-[300px]  fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+              class="text-[#7f7f7f] med:text-base text-xs  font-light lg:w-[400px] mad:w-[360px]  fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
               Collaboration is at the heart of what we do. Our team thrives on the synergy that arises when unique
               perspective converge, fostering an enviroment of boundless creativity. by harnessing our collective
               expertise, we produce extraordinary resuults that consistently surpass expectations.
             </p>
 
-            <div class="flex items-center  gap-4 flex-1 ">
+            <div class="flex items-center w-[380px]  gap-4 flex-1 ">
               <div class="flex rounded-full relative ">
                 <img src="./src/images/emma.jpg"
-                  class="sm:w-[70px] between relative  w-[50px] h-[50px] sm:h-[70px]  object-cover object-top  rounded-full "
+                  class="w-[90px] h-[90px]  object-cover object-top  rounded-full "
                   alt="founder">
                 <button
-                  class="bg-[#ff9800] sm:w-6 sm:h-6 w-5 h-5 rounded-full top-8 right-0 sm:-right-2 absolute text-lg ">"</button>
+                  class="bg-[#ff9800] w-7 h-7 flex items-center text-center justify-center  rounded-full top-12 pt-2 -right-2  absolute text-xl ">"</button>
               </div>
               <p
-                class="lg:text-lg flex-1  text-xs lg:w-[300px] pl-5 mad:pl-0  w-full fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                class="lg:text-lg flex-1  text-xs  pl-5 mad:pl-0  w-full fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
                 <span class="font-medium">Passionately</span>
                 <span class="font-medium">Creating</span>
                 <span class="font-thin">Design</span>
@@ -1130,7 +1132,7 @@
           </div>
 
           <div
-            class="grid-2 scroll-zoom-wrapper mad:w-[300px] md:w-full h-full  mad:pl-12  mt-10 sm:mt-0 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+            class="grid-2 scroll-zoom-wrapperss  w-full    h-full  mt-20 sm:mt-0 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
             <img src="./src/images/bg.jpg" class="designer-imgss scroll-zoom-imgss" />
           </div>
         </div>
@@ -1151,24 +1153,24 @@
         <div class="flex gap-12 text-[#696969] items-center justify-center between-coxs:justify-end  ">
           <div>
             <p
-              class="text-center text-xs font-light px-4 lg:px-0 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+              class="text-center text-base font-light px-4 lg:px-0 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
               <span>Professionals focused on helping your brand</span><br />
               <span>grow and move forward.</span>
             </p>
           </div>
 
           <!-- Vertical left border -->
-          <div class="w-64 h-px hidden mad:inline bg-[#666666]"></div>
+          <div class="w-80 h-px hidden mad:inline bg-[#666666]"></div>
         </div>
 
       </div>
 
 
 
-      <div class="between-2xl:px-40 px-8 pb-20   sm:pb-0 text-white max-w-screen-2xl mx-auto w-full relative z-40">
+      <div class="between-2xl:px-40 px-8 pb-20 pt-12   sm:pb-0 text-white max-w-screen-2xl mx-auto w-full relative z-40">
         <div class="between-coxs:flex  flex-col hidden   ">
           <div
-            class="flex-1-div  between-sm:pl-24 between-coxs:flex gap-4 items-center fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+            class="flex-1-div  between-sm:pl-36 between-coxs:flex gap-4 items-center fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
             <button class="w-60 h-20 overflow-hidden  rounded-full shadow-md group">
               <img src="./src/images/3.jpg" alt="Button Image" class="w-full h-full object-top object-cover
               transform scale-100 group-hover:scale-90
@@ -1178,19 +1180,19 @@
                 class="font-medium">Unique</span> <span class="font-thin">Ideas</span></h4>
           </div>
           <div
-            class="flex-2-div  between-coxs:flex gap-8 items-center fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+            class="flex-2-div between-2xl:pl-10  between-coxs:flex gap-8 items-center fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
             <h4 class="lg:text-[74px] between-coxs:text-[40px] between-sm:text-[58px]"><span class="font-medium">For
                 Your</span> <span class="font-thin">Business.</span></h4>
             <button
-              class="grid grid-cols-[50%_10%] items-center justify-center gap-4 cursor-pointer w-46 h-12 lg:h-16 overflow-hidden text-center rounded-full shadow-md group transition-all duration-300 bg-[#ff9800] hover:bg-amber-500">
+              class="grid grid-cols-[50%_10%] items-center justify-center gap-4 cursor-pointer w-56 h-12 lg:h-16 overflow-hidden text-center rounded-full shadow-md group transition-all duration-300 bg-[#ff9800] hover:bg-amber-500">
 
-              <span class="text-black uppercase text-[10px] tracking-wide transition-transform duration-300 ">
+              <span class="text-black uppercase lg:text-xs text-[10px] tracking-wide transition-transform duration-300 ">
                 What we do
               </span>
 
               <!-- Arrow circle container -->
               <div
-                class="w-8 h-8 p-1 rounded-full bg-black transition-transform duration-300 group-hover:scale-125 flex items-center justify-center">
+                class="w-10 h-10 p-1 rounded-full bg-black transition-transform duration-300 group-hover:scale-125 flex items-center justify-center">
                 <img src="./src/images/right-arrow.svg" alt="Arrow" class="w-5 h-5" />
               </div>
             </button>
@@ -1396,7 +1398,7 @@
       <!-- ✅ Content stays above (z-20) -->
       <div class="between-2xl:px-40 px-8 md:pt-20 pb-20 z-20 relative max-w-screen-2xl mx-auto w-full">
         <div class="grid grid-cols-1 between-lg:grid-cols-2 lg:gap-x-12">
-          <div class="grid-1 flex flex-col gap-8">
+          <div class="grid-1 flex flex-col gap-10">
             <h4
               class=" text-black fade-up opacity-0 leading-[80px] md:text-[44px] md:w-[190px] between-coxs:leading-[50px]  translate-y-10 transition-all duration-700 ease-in-out text-2xl sm:text-[36px] lg:text-[68px] between-coxs:text-[32px] font-medium pt-6 lg:leading-[100px]  lg:max-w-[200px]">
               <span>Meet</span> <span>Our</span>
@@ -1414,9 +1416,9 @@
               Together, our creative
               team is commited to delivering impactful work that exceeds expectations.</p>
             <button
-              class="grid grid-cols-[50%_10%] items-center justify-center gap-4 cursor-pointer w-46 h-12 lg:h-16 overflow-hidden text-center rounded-full shadow-md group transition-all duration-300 bg-[#ff9800] hover:bg-amber-500">
+              class="grid grid-cols-[50%_10%] items-center justify-center gap-4 cursor-pointer w-52 h-12 lg:h-16 overflow-hidden text-center rounded-full shadow-md group transition-all duration-300 bg-[#ff9800] hover:bg-amber-500">
 
-              <span class="text-black uppercase text-[10px] tracking-wide transition-transform duration-300 ">
+              <span class="text-black uppercase text-[10px] md:text-xs tracking-wide transition-transform duration-300 ">
                 read more
               </span>
 
@@ -1568,21 +1570,25 @@
 
   <section data-bg="light" class="overflow-hidden bg-[#f2f2f2] ">
     <div class="lg:pt-28 pt-16 max-w-screen-2xl w-full mx-auto">
-      <div class="flex gap-8 text-[#696969] items-start justify-center   between-coxs:justify-end  ">
+      <div class="flex gap-4 text-[#696969] items-start justify-center   between-coxs:justify-end  ">
         <div>
           <p
-            class="text-center text-xs font-light px-6 lg:px-0 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
+            class="text-center text-xs md:text-base font-light px-6 lg:px-0 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
             <span>Customer reviews are a valuable source</span><br />
             <span>of information for both business and consumers. </span>
           </p>
         </div>
 
         <!-- Vertical left border -->
-        <div class="w-64 h-px hidden lg:inline bg-[#d9d9d9]"></div>
+        <div class="w-80 h-px hidden lg:inline bg-[#d9d9d9]"></div>
       </div>
     </div>
 
-    <div class="pt-24 between-2xl:px-40 px-8  ">
+    <div class="pt-24   ">
+
+      <div class="between-2xl:px-40 px-8">
+
+     
       <p
         class="lg:text-[68px] text-black text-center text-[24px] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out  between-coxs:text-[40px]      ">
         <span class="font-medium"> Customer</span> <br class="hidden"><span class="font-thin">Voices</span>
@@ -1590,7 +1596,7 @@
         <span class="font-thin">They Say!</span>
       </p>
       <!-- Thumbnails parent -->
-      <div id="imageContainer" class=" fade-up opacity-0 translate-y-10  transition-all duration-700 ease-in-out  items-center justify-center place-items-center  min-[375px]:px-6 min-[425px]:px-4 pt-12
+      <div id="imageContainer" class=" fade-up opacity-0 translate-y-10  transition-all duration-700 ease-in-out  items-center justify-center place-items-center  
         flex flex-wrap
      ">
       </div>
@@ -1598,7 +1604,7 @@
 
       <!-- Centered Quote Icon (desktop only) -->
       <div
-        class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:flex items-center justify-center hidden ">
+        class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out pt-12 lg:flex items-center justify-center hidden ">
         <img class="w-10 h-10" src="./src/images/double-quotes.png" alt="Quote Icon" />
       </div>
 
@@ -1634,8 +1640,10 @@
 
 
       <!-- Swiper Carousel -->
-      <div class="w-full relative  ">
-        <div class="swiper default-carousel ">
+      
+       </div>
+       <div class="w-full relative  ">
+        <div class="swiper default-carousel  ">
           <div class="swiper-wrapper ">
             <!-- Logos -->
             <!-- You can loop these using JS if needed -->
@@ -1684,6 +1692,7 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
   <!-- 6th section -->
   <section data-bg="light" class=" overflow-hidden  bg-white">
@@ -1692,12 +1701,12 @@
         <h6
           class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:text-[42px] font-medium pb-8 lg:pb-0 text-[24px] between-coxs:text-[28px]">
           Popular Publications:</h6>
-        <div class="flex items-center gap-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+        <div class="flex items-center gap-4 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
           <p
-            class="uppercase text-[10px] font-medium fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+            class="uppercase text-[10px] md:text-xs font-medium fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
             view all</p>
           <button
-            class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
+            class="bg-[#e5e5e5] rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
 
             <img src="./src/images/black.svg" class="rotate-180" alt="">
           </button>
@@ -1714,11 +1723,11 @@
           </div>
           <p
             class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out flex gap-2 text-xs pt-8 text-[#7f7f7f]">
-            <span class="uppercase text-[#ff9800] text-[10px] tracking-widest">technology</span>
-            <span class="uppercase text-[10px] tracking-widest">may 24 2023</span>
+            <span class="uppercase text-[#ff9800] text-[12px] tracking-widest">technology</span>
+            <span class="uppercase text-[12px] tracking-widest">may 24 2023</span>
           </p>
           <p
-            class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:text-[28px] text-base between-coxs:text-lg text-wrap font-medium lg:w-[400px]">
+            class=" fade-up opacity-0 translate-y-10 text-black leading-9 transition-all duration-700 ease-in-out lg:text-[28px] text-base between-coxs:text-lg text-wrap font-medium lg:w-[400px]">
             How to Become a Graphic Designer in 10 Simple Steps</p>
           <p
             class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out text-[#7f7f7f] text-xs sm:text-base md:w-[400px] font-light">
@@ -1728,10 +1737,10 @@
 
           <div class="flex items-center gap-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
             <p
-              class="uppercase text-[10px] font-medium tracking-widest fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+              class="uppercase text-[12px] font-medium tracking-widest fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
               read more</p>
             <button
-              class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
+              class="bg-[#e5e5e5] rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
               <img src="./src/images/black.svg" class="rotate-180" alt="">
             </button>
           </div>
@@ -1746,8 +1755,8 @@
           </div>
           <p
             class="fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out flex pt-8 gap-2 text-xs text-[#7f7f7f]">
-            <span class="uppercase text-[10px] text-[#ff9800] tracking-widest">technology</span>
-            <span class="uppercase tracking-widest text-[10px]">may 24 2023</span>
+            <span class="uppercase text-xs text-[#ff9800] tracking-widest">technology</span>
+            <span class="uppercase tracking-widest text-[12px]">may 24 2023</span>
           </p>
           <p
             class=" fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out lg:text-[28px] between-coxs:text-lg text-base font-medium lg:w-[400px]">
@@ -1760,9 +1769,9 @@
 
           <div
             class="flex items-center gap-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
-            <p class="uppercase text-[10px] font-medium tracking-widest">read more</p>
+            <p class="uppercase text-[12px] font-medium tracking-widest">read more</p>
             <button
-              class="bg-[#e5e5e5] rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
+              class="bg-[#e5e5e5] rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#d4d4d4] hover:scale-110">
 
               <img src="./src/images/black.svg" class="rotate-180" alt="">
             </button>
@@ -1779,7 +1788,7 @@
   <footer data-bg="dark"
     class=" overflow-hidden bg-black fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out z-90 ">
     <div
-      class=" relative between-2xl:p-26 py-16 px-6 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+      class=" relative between-2xl:px-38 py-16 px-6 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
       <div class="grid grid-cols-1 md:grid-cols-[33%_30%_30%] max-w-screen-2xl mx-auto w-full  gap-x-12">
         <div class="grid-1 order-1 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out ">
 
@@ -1790,7 +1799,7 @@
               class="lg:text-[42px] text-[36px] text-[#e6e6e6] font-medium fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
               Ashely.</h6>
             <p
-              class="font-light text-sm text-[#666666] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+              class="font-light text-base text-[#666666] fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
               Subscribe our newsletter:</p>
             <div
               class="grid grid-cols-[70%_15%] px-2 items-center justify-between gap-4 cursor-pointer md:w-64 h-16 lg:h-16 overflow-hidden text-center rounded-full shadow-md group transition-all duration-300 bg-[#1a1a1a] hover:bg-white">
@@ -1801,8 +1810,8 @@
 
               <!-- Arrow circle container -->
               <div
-                class="w-8 h-8 p-1 rounded-full bg-black transition-transform duration-300  flex items-center justify-end">
-                <img src="./src/images/right-arrow.svg" alt="Arrow" class="w-5 h-5" />
+                class="w-8 h-8 p-1 rounded-full bg-[#ff9800] transition-transform duration-300  flex items-center justify-end">
+                <img src="./src/images/right-arrow-1.svg" alt="Arrow" class="w-5 h-5" />
               </div>
             </div>
 
@@ -1835,7 +1844,7 @@
           </div>
         </div>
         <div
-          class="  grid-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out order-2 between-md:pl-44 md:pl-16  pt-12 between-sm:pt-0 md:pt-0  ">
+          class="  grid-2 fade-up opacity-0 translate-y-10 transition-all duration-700 ease-in-out order-2 between-md:pl-32 md:pl-16  pt-12 between-sm:pt-0 md:pt-0  ">
 
           <div>
             <ul

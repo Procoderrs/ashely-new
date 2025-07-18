@@ -109,7 +109,7 @@ function renderGallery() {
     const wrap = document.createElement('div');
     wrap.dataset.index = i;
     wrap.className = `
-      w-[90px] h-[90px] rounded-full border-4 p-1  
+      w-[90px] h-[90px] rounded-full border-4   
       ${i===activeIndex? 'border-[#ff9800]' : 'border-transparent hover:border-white'}
       transition-all duration-300 cursor-pointer ${i%2?'min-[993px]:mt-12':''}`;
     wrap.innerHTML =
@@ -123,9 +123,9 @@ function renderGallery() {
   const anim = direction==='left' ? 'animate-slide-left':'animate-slide-right';
   const content = `
     <div class="max-w-2xl mx-auto text-center ${anim}">
-      <h3 class="lg:text-2xl text-sm font-semibold text-gray-800  ">${m.name}</h3>
-      <p  class="sm:text-sm  text-xs text-gray-500 mt-1  ">${m.designation}</p>
-      <p  class="mt-4  font-light text-sm  leading-8  ">${m.description}</p>
+      <h3 class="lg:text-xl text-sm font-medium text-black  ">${m.name}</h3>
+      <p  class="sm:text-sm  text-xs text-[#696969] tracking-wide  mt-1  ">${m.designation}</p>
+      <p  class="mt-4  font-light text-sm  md:text-xl leading-8  ">${m.description}</p>
     </div>`;
     descContainer.innerHTML=content;
     descContainerMobile.innerHTML=content
