@@ -352,6 +352,32 @@ document.querySelectorAll('.fade-up').forEach((el) => {
   });
 
 
+
+
+/* 1200  */
+
+const mobileBtn_1 = document.getElementById('mobileMenuBtn-2');
+  const mobileClose_1 = document.getElementById('mobileCloseBtn');
+  const mobileOverlay_1 = document.getElementById('mobileOverlay');
+
+  mobileBtn_1.addEventListener('click', () => {
+    mobileOverlay_1.classList.remove('hidden', 'opacity-0');
+    mobileOverlay_1.classList.add('opacity-100');
+  });
+
+  mobileClose_1.addEventListener('click', () => {
+    mobileOverlay_1.classList.remove('opacity-100');
+    mobileOverlay_1.classList.add('opacity-0');
+
+    mobileOverlay_1.addEventListener('transitionend', function handler(e) {
+      if (e.propertyName === 'opacity') {
+        mobileOverlay_1.classList.add('hidden');
+        mobileOverlay_1.removeEventListener('transitionend', handler);
+      }
+    });
+  });
+
+
 /* circle-bg-change-detect */
 const sections = document.querySelectorAll('[data-bg]');
 const circleBg = document.getElementById('circleBg');
