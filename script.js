@@ -381,6 +381,42 @@ sections.forEach((section) => {
 });
 
 
+
+
+
+
+
+
+const sectionss = document.querySelectorAll('section');
+const logo = document.getElementById('logo'); // Your h1
+const menuIcon = document.getElementById('menuIcon'); // Your img
+
+const observerss = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const bg = entry.target.dataset.bg; // light or dark
+
+      if (bg === 'dark') {
+        // Dark background → use white text & white icon (no invert)
+        logo.classList.remove('text-black');
+        logo.classList.add('text-white');
+
+        menuIcon.classList.remove('invert');
+      } else {
+        // Light background → use black text & invert icon
+        logo.classList.remove('text-white');
+        logo.classList.add('text-black');
+
+        menuIcon.classList.add('invert');
+      }
+    }
+  });
+}, {
+  threshold: 0
+});
+
+sectionss.forEach(section => observerss.observe(section));
+
 /* 2nd-section-img-zoom-effect */
 
 
