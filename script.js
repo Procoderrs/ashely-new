@@ -273,7 +273,7 @@ document.querySelectorAll('.fade-up').forEach((el) => {
 
 
 /* below 1400 */
-  const openBtn = document.getElementById('desktopMenuBtn');
+  /* const openBtn = document.getElementById('desktopMenuBtn');
   const closeBtn = document.getElementById('desktopCloseBtn');
   const overlay = document.getElementById('desktopOverlay');
 
@@ -296,7 +296,7 @@ document.querySelectorAll('.fade-up').forEach((el) => {
         overlay.removeEventListener('transitionend', handler);
       }
     });
-  });
+  }); */
 
 
 
